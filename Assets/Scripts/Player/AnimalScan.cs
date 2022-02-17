@@ -11,16 +11,15 @@ public class AnimalScan : MonoBehaviour
 {
     // Camera 
     [SerializeField] Transform cameraPlayer;
-    [SerializeField] Canvas uiPlayer;
+    [SerializeField] CameraUI cameraUi;
 
     private RaycastHit hit;
     private float CameraRange = 500;
 
-    // Debug
-    [SerializeField] Text textName;
+    private Animal currentAnimal;
 
-    [SerializeField]
-    InputActionReference triggerAction;
+    // Debug
+    [SerializeField] InputActionReference triggerAction;
 
      private void OnEnable()
     {
@@ -39,37 +38,26 @@ public class AnimalScan : MonoBehaviour
             if(hit.transform.CompareTag("Animal")){
                 Animal animal = hit.transform.gameObject.GetComponent<AnimalObject>().animal;
                 if(animal != null){
-                    textName.text = animal.name;
-                    Debug.Log("Animal " + textName.text);
+                    currentAnimal = animal;
+                    cameraUi.StartFocus();
                 }
             }
             else{
-                textName.text = "";
+                cameraUi.StopFocus();
+                currentAnimal = null;
             }
         }
         else{
-            textName.text = "";
+            cameraUi.StopFocus();
+            currentAnimal = null;
         }
     }
 
     private void CaptureScreen(InputAction.CallbackContext obj)
     {
-        StartCoroutine(CaptureScreen());
-    }
-
-    public IEnumerator CaptureScreen()
-    {
-        // Wait till the last possible moment before screen rendering to hide the UI
-        yield return null;
-        uiPlayer.enabled = false;
-    
-        // Wait for screen rendering to complete
-        yield return new WaitForEndOfFrame();
-    
-        // Take screenshot
-        ScreenCapture.CaptureScreenshot("screenshot.png");
-    
-        // Show UI after we're done
-        uiPlayer.enabled = true;
+        if(currentAnimal != null){
+            String path = "Photos/" + currentAnimal.specie.ToString();
+            ScreenshotHandler.TakeScreenshot(path, currentAnimal.name + "1");
+        }
     }
 }

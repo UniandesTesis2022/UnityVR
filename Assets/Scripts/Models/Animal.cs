@@ -6,4 +6,10 @@ using UnityEngine;
 public class Animal
 {
     public string name;
+
+    public species specie;
+}
+
+public enum species{
+    SPHERE, SQUARE
 }
