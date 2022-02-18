@@ -34,8 +34,7 @@ public class ScreenshotHandler : MonoBehaviour {
         yield return new WaitForEndOfFrame();
     
         // Take screenshot
-        //Texture2D texture = ResampleAndCrop(ScreenCapture.CaptureScreenshotAsTexture(4));
-        Texture2D texture = ScreenCapture.CaptureScreenshotAsTexture(4);
+        Texture2D texture = ResampleAndCrop(ScreenCapture.CaptureScreenshotAsTexture(6));
 
         byte[] bytes = texture.EncodeToJPG();
         var dirPath = Application.dataPath + "/" + path;
