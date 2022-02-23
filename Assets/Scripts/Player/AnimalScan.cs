@@ -1,10 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.InputSystem;
-using UnityEngine.Events;
 using System;
 
 public class AnimalScan : MonoBehaviour
@@ -17,19 +13,6 @@ public class AnimalScan : MonoBehaviour
     private float CameraRange = 500;
 
     private Animal currentAnimal;
-
-    // Debug
-    [SerializeField] InputActionReference triggerAction;
-
-     private void OnEnable()
-    {
-        triggerAction.action.performed += CaptureScreen;
-    }
-    private void OnDisable()
-    {
-        triggerAction.action.performed -= CaptureScreen;
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -53,9 +36,10 @@ public class AnimalScan : MonoBehaviour
         }
     }
 
-    private void CaptureScreen(InputAction.CallbackContext obj)
+    public void CaptureScreen()
     {
-        if(currentAnimal != null){
+        Debug.Log("Capture");
+        if (currentAnimal != null){
             String path = "Photos/" + currentAnimal.specie.ToString();
             ScreenshotHandler.TakeScreenshot(path, currentAnimal.name + "1");
         }
