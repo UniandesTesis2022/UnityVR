@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class ButtonMap : MonoBehaviour
 {
-    [SerializeField] private AnimalScan animalScan;
+    [SerializeField] GameObject menuUI;
+
+    private AnimalScan animalScan;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animalScan = GetComponent<AnimalScan>();
     }
 
     // Update is called once per frame
@@ -17,8 +19,13 @@ public class ButtonMap : MonoBehaviour
     {
         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
         {
-            Debug.Log("Button");
+            Debug.Log("Index");
             animalScan.CaptureScreen();
+        }
+        if (OVRInput.GetDown(OVRInput.Button.Start))
+        {
+            Debug.Log("Start");
+            menuUI.SetActive(!menuUI.activeSelf);
         }
     }
 }

@@ -6,7 +6,7 @@ public class SaveData{
     [System.Serializable]
     public struct AnimalPhoto
     {
-        public species specie;
+        public Animal.species specie;
         public string name;
         public int numberPhotos;
     }

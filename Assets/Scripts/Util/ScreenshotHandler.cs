@@ -1,62 +1,64 @@
 using System;
 using System.IO;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ScreenshotHandler : MonoBehaviour {
 
+    private static ScreenshotHandler instance;
+
     [SerializeField] GameObject uiPlayer;
 
-    private static ScreenshotHandler instance;
+    //Save path
+    public string savePath = "Photos/";
 
     private void Awake() {
         instance = this;
     }
 
-    public static void TakeScreenshot(string path, string name){
-        instance.TakeScreenshotInNextFrame(path, name);
+    public static void TakePhoto(Camera camera, string folder, string name){
+        instance.CaptureSavePhoto(camera, folder, name);
     }
 
-    private void TakeScreenshotInNextFrame(string path, string name){
-        StartCoroutine(CaptureScreen(path, name));
-    }
+    public void CaptureSavePhoto(Camera camera, string folder, string name){
 
-    public IEnumerator CaptureScreen(string path, string name)
-    {
-        Debug.Log("Pic " + path);
-        // Wait till the last possible moment before screen rendering to hide the UI
-        yield return null;
-        uiPlayer.SetActive(false);
-    
-        // Wait for screen rendering to complete
-        yield return new WaitForEndOfFrame();
-    
-        // Take screenshot
-        Texture2D texture = ResampleAndCrop(ScreenCapture.CaptureScreenshotAsTexture(6));
-
-        byte[] bytes = texture.EncodeToJPG();
-        var dirPath = Application.dataPath + "/" + path;
-        if(!Directory.Exists(dirPath)) {
-            Directory.CreateDirectory(dirPath);
+        Vector2 size = new Vector2(Screen.currentResolution.width, Screen.currentResolution.height);
+        
+        string path = Application.dataPath + "/" + savePath + folder + "/";
+        if(!Directory.Exists(path)) {
+            Directory.CreateDirectory(path);
         }
-        File.WriteAllBytes(dirPath + "/" + name + ".jpg", bytes);
+        path += name + ".jpg";
 
-        // Show UI after we're done
-        uiPlayer.SetActive(true);
+        saveTexture(path, capture(camera, (int)size.x, (int)size.y));
     }
 
+    public static Texture2D capture(Camera camera, int width, int height) {
+        RenderTexture rt = new RenderTexture(width, height, 0);
 
-     public static Texture2D ResampleAndCrop(Texture2D sourceTexture)
-     {
-        int width = sourceTexture.width / 3;
-        int height = sourceTexture.height / 3;
+        rt.depth = 24;
+        rt.antiAliasing = 8;
 
-        Color[] c = ((Texture2D) sourceTexture).GetPixels(width, height, width, height);
-        Texture2D croppedTexture = new Texture2D(width, height);
-        croppedTexture.SetPixels(c);
-        croppedTexture.Apply();
-        return croppedTexture;
-     }
+        camera.targetTexture = rt;
+        camera.RenderDontRestore();
+
+        RenderTexture.active = rt;
+        Texture2D texture = new Texture2D(width, height, TextureFormat.ARGB32, false, true);
+        Rect rect = new Rect(0, 0, width, height);
+        texture.ReadPixels(rect, 0, 0);
+        texture.filterMode = FilterMode.Point;
+        texture.Apply();
+        camera.targetTexture = null;
+        RenderTexture.active = null;
+        Destroy(rt);
+
+        return texture;
+    }
+
+    public static void saveTexture(string path, Texture2D texture) {
+        File.WriteAllBytes(path, texture.EncodeToJPG());
+        #if UNITY_EDITOR
+        Debug.Log("saved screenshot to:" + path);
+        #endif
+    }
 }

@@ -7,9 +7,15 @@ public class GameViewController : MonoBehaviour, ISaveable {
     
     private List<SaveData.AnimalPhoto> animalPhotos;
 
-    public static void SaveJsonData(GameViewController controller){
+    private static GameViewController instance;
+
+    private void Awake() {
+        instance = this;
+    }
+
+    public static void SaveJsonData(){
         SaveData sd = new SaveData();
-        controller.PopulateFromSaveData(sd);
+        instance.PopulateFromSaveData(sd);
 
         if(FileManager.WriteToFile("SaveData.dat", sd.ToJson() )){
             Debug.Log("Save successful");
@@ -20,12 +26,12 @@ public class GameViewController : MonoBehaviour, ISaveable {
         pSaveData.animalPhotos = animalPhotos;
     }
 
-    public static void LoadFromJsonData(GameViewController controller){
+    public static void LoadFromJsonData(){
         if(FileManager.LoadFromFile("SaveData.dat", out var json)){
             SaveData sd = new SaveData();
             sd.LoadFromJson(json);
 
-            controller.LoadFromSaveData(sd);
+            instance.LoadFromSaveData(sd);
             Debug.Log("Load complete");
         }
     }
