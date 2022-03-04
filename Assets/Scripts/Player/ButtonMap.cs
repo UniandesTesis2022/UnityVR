@@ -6,18 +6,23 @@ public class ButtonMap : MonoBehaviour
 {
     [SerializeField] GameObject menuUI;
 
+    private bool activeMenu;
+
     private AnimalScan animalScan;
 
     // Start is called before the first frame update
     void Start()
     {
         animalScan = GetComponent<AnimalScan>();
+
+        activeMenu = false;
+        menuUI.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && !activeMenu)
         {
             Debug.Log("Index");
             animalScan.CaptureScreen();
@@ -25,7 +30,10 @@ public class ButtonMap : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.Start))
         {
             Debug.Log("Start");
-            menuUI.SetActive(!menuUI.activeSelf);
+            activeMenu = !activeMenu;
+            menuUI.SetActive(activeMenu);
+
+            Time.timeScale = activeMenu ? 0 : 1;
         }
     }
 }

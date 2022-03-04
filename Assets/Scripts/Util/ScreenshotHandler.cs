@@ -24,7 +24,7 @@ public class ScreenshotHandler : MonoBehaviour {
 
         Vector2 size = new Vector2(Screen.currentResolution.width, Screen.currentResolution.height);
         
-        string path = Application.dataPath + "/" + savePath + folder + "/";
+        string path = Application.persistentDataPath + "/" + savePath + folder + "/";
         if(!Directory.Exists(path)) {
             Directory.CreateDirectory(path);
         }

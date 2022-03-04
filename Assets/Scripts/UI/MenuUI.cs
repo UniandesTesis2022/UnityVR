@@ -38,7 +38,7 @@ public class MenuUI : MonoBehaviour
     }
 
     public void RenderPhotos(string name){
-        DirectoryInfo dir = new DirectoryInfo(Application.dataPath + "/Photos/" + name);
+        DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath + "/Photos/" + name);
         FileInfo[] info = dir.GetFiles("*.*");
         foreach (FileInfo f in info) 
         {
