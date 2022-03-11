@@ -6,9 +6,9 @@ public class SaveData{
     [System.Serializable]
     public struct AnimalPhoto
     {
-        public species specie;
+        public Animal.species specie;
         public string name;
-        public int numberPhotos;
+        public bool takenPho;
     }
 
     public List<AnimalPhoto> animalPhotos = new List<AnimalPhoto>();
@@ -25,4 +25,6 @@ public class SaveData{
 public interface ISaveable{
     void PopulateFromSaveData(SaveData pSaveData);
     void LoadFromSaveData(SaveData pSaveData);
+    void PopulateFromGameData(GameData pGameData);
+    void LoadFromGameData(GameData pGameData);
 }
