@@ -7,6 +7,7 @@ public class AnimalScan : MonoBehaviour
 {
     // Camera 
     [SerializeField] Transform cameraPlayer;
+    [SerializeField] Camera photoCamera; 
     [SerializeField] CameraUI cameraUi;
 
     private RaycastHit hit;
@@ -40,8 +41,11 @@ public class AnimalScan : MonoBehaviour
     {
         Debug.Log("Capture");
         if (currentAnimal != null){
-            String path = "Photos/" + currentAnimal.specie.ToString();
-            ScreenshotHandler.TakeScreenshot(path, currentAnimal.name + "1");
+            cameraUi.gameObject.SetActive(false);
+            ScreenshotHandler.TakePhoto(photoCamera, currentAnimal.specie.ToString(), currentAnimal.name);
+            cameraUi.gameObject.SetActive(true);
+            
+            cameraUi.gameObject.GetComponent<Animator>().Play("Focus");
         }
     }
 }
