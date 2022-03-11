@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -20,62 +22,54 @@ public class MenuUI : MonoBehaviour
     void Start()
     {
         RenderSpecies();
-        RenderPhotos("SPHERE");
+        RenderPhotos(Animal.species.SPHERE);
     }
     
     private void OnEnable() {
         transform.position = player.transform.position + offset;
     }
 
-    private void RenderSpecies(){
-        string[] temp = {"SPHERE", "SQUARE"};
-        foreach (string name in temp)
+    private void RenderSpecies(){   
+        foreach(Animal.species specie in Enum.GetValues(typeof(Animal.species)))
         {
             GameObject newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
             SpeciesBtn btnScript = newObject.GetComponent<SpeciesBtn>();
-            btnScript.SetUp(this, name);
+            btnScript.SetUp(this, specie);
         }
     }
 
-    public void RenderPhotos(string name){
-        DirectoryInfo dir = new DirectoryInfo(Application.persistentDataPath + "/Photos/" + name);
-        FileInfo[] info = dir.GetFiles("*.*");
-        foreach (FileInfo f in info) 
+    public void RenderPhotos(Animal.species name){
+        EmptyPanel();
+
+        List<Animal> animals = GameViewController.GetAnimalsBySpecie(name);
+        string imagePath;
+        foreach (Animal animal in animals)
         {
-            if(f.FullName.EndsWith(".jpg")){
-                GameObject newObject = Instantiate(photoPrefab, photoPanel.position, Quaternion.identity, photoPanel);
+            GameObject newObject = Instantiate(photoPrefab, photoPanel.position, Quaternion.identity, photoPanel);
+            
+            imagePath = Path.Combine(Application.persistentDataPath, "Photos", animal.specie.ToString(), animal.name + ".jpg");
+            if(File.Exists(imagePath)){
                 PhotoBtn btnScript = newObject.GetComponent<PhotoBtn>();
                 
-                Sprite actualPhoto = LoadNewSprite(f.FullName);
-                btnScript.SetUp(actualPhoto);
+                Sprite actualPhoto = LoadNewSprite(imagePath);
+                btnScript.SetUp(actualPhoto, animal.name);
             }
         }
     }
 
     public Sprite LoadNewSprite(string FilePath, float PixelsPerUnit = 100.0f) {
-   
-     // Load a PNG or JPG image from disk to a Texture2D, assign this texture to a new sprite and return its reference
-     
-     Texture2D SpriteTexture = LoadTexture(FilePath);
-     Sprite NewSprite = Sprite.Create(SpriteTexture, new Rect(0, 0, SpriteTexture.width, SpriteTexture.height),new Vector2(0,0), PixelsPerUnit);
- 
-     return NewSprite;
+           
+        FileManager.LoadFromFile(FilePath, out Texture2D SpriteTexture);
+        Sprite NewSprite = Sprite.Create(SpriteTexture, new Rect(0, 0, SpriteTexture.width, SpriteTexture.height),new Vector2(0,0), PixelsPerUnit);
+
+        return NewSprite;
+   }
+
+   public void EmptyPanel(){
+        int children = transform.childCount;
+        for (int i = children - 1; i >= 0; i--){
+            Destroy(transform.GetChild(i).gameObject);
+        }
    }
  
-   public Texture2D LoadTexture(string FilePath) {
- 
-     // Load a PNG or JPG file from disk to a Texture2D
-     // Returns null if load fails
- 
-     Texture2D Tex2D;
-     byte[] FileData;
- 
-     if (File.Exists(FilePath)){
-       FileData = File.ReadAllBytes(FilePath);
-       Tex2D = new Texture2D(2, 2);           // Create new "empty" texture
-       if (Tex2D.LoadImage(FileData))           // Load the imagedata into the texture (size is set automatically)
-         return Tex2D;                 // If data = readable -> return texture
-     }  
-     return null;                     // Return null if load failed
-   }
 }

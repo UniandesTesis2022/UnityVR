@@ -9,13 +9,13 @@ public class SpeciesBtn : MonoBehaviour
 
     private MenuUI menu;
 
-    private string specie;
+    private Animal.species specie;
 
-    public void SetUp(MenuUI pMenu, string pName){
-        specie = pName;
+    public void SetUp(MenuUI pMenu, Animal.species pSpecie){
+        specie = pSpecie;
         menu = pMenu;
 
-        text.text = pName;
+        text.text = pSpecie.ToString();
     }
 
     public void OnClick(){

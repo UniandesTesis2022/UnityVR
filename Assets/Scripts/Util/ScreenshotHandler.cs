@@ -23,14 +23,7 @@ public class ScreenshotHandler : MonoBehaviour {
     public void CaptureSavePhoto(Camera camera, string folder, string name){
 
         Vector2 size = new Vector2(Screen.currentResolution.width, Screen.currentResolution.height);
-        
-        string path = Application.persistentDataPath + "/" + savePath + folder + "/";
-        if(!Directory.Exists(path)) {
-            Directory.CreateDirectory(path);
-        }
-        path += name + ".jpg";
-
-        saveTexture(path, capture(camera, (int)size.x, (int)size.y));
+        FileManager.WriteToFile(savePath + folder, name, capture(camera, (int)size.x, (int)size.y));
     }
 
     public static Texture2D capture(Camera camera, int width, int height) {
@@ -53,12 +46,5 @@ public class ScreenshotHandler : MonoBehaviour {
         Destroy(rt);
 
         return texture;
-    }
-
-    public static void saveTexture(string path, Texture2D texture) {
-        File.WriteAllBytes(path, texture.EncodeToJPG());
-        #if UNITY_EDITOR
-        Debug.Log("saved screenshot to:" + path);
-        #endif
     }
 }

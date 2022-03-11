@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class PhotoBtn : MonoBehaviour
 {
-    private Image photo;
+    [SerializeField] private Image photo;
 
-    public void SetUp(Sprite pSprite){
-        photo = GetComponent<Image>();
+    [SerializeField] private Text animalName;
+
+    public void SetUp(Sprite pSprite, string pName){
         photo.sprite = pSprite;
+        animalName.text = pName;
     }
 
 }

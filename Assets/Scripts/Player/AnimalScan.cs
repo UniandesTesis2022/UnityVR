@@ -41,7 +41,11 @@ public class AnimalScan : MonoBehaviour
     {
         Debug.Log("Capture");
         if (currentAnimal != null){
+            cameraUi.gameObject.SetActive(false);
             ScreenshotHandler.TakePhoto(photoCamera, currentAnimal.specie.ToString(), currentAnimal.name);
+            cameraUi.gameObject.SetActive(true);
+            
+            cameraUi.gameObject.GetComponent<Animator>().Play("Focus");
         }
     }
 }
