@@ -1023,6 +1023,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5604898863674830450, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725732389621280936, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_CellSize.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725732389621280936, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_CellSize.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725732389621280936, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725732389621280936, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Padding.m_Right
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

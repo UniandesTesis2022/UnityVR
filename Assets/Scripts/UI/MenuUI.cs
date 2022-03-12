@@ -26,7 +26,8 @@ public class MenuUI : MonoBehaviour
     }
     
     private void OnEnable() {
-        transform.position = player.transform.position + offset;
+        transform.position = player.transform.position + offset; 
+        RenderPhotos(Animal.species.SPHERE);
     }
 
     private void RenderSpecies(){   
@@ -48,11 +49,14 @@ public class MenuUI : MonoBehaviour
             GameObject newObject = Instantiate(photoPrefab, photoPanel.position, Quaternion.identity, photoPanel);
             
             imagePath = Path.Combine(Application.persistentDataPath, "Photos", animal.specie.ToString(), animal.name + ".jpg");
+
+            PhotoBtn btnScript = newObject.GetComponent<PhotoBtn>();
             if(File.Exists(imagePath)){
-                PhotoBtn btnScript = newObject.GetComponent<PhotoBtn>();
                 
                 Sprite actualPhoto = LoadNewSprite(imagePath);
                 btnScript.SetUp(actualPhoto, animal.name);
+            }else{
+                btnScript.SetUp(animal.name);
             }
         }
     }
@@ -66,9 +70,9 @@ public class MenuUI : MonoBehaviour
    }
 
    public void EmptyPanel(){
-        int children = transform.childCount;
+        int children = photoPanel.childCount;
         for (int i = children - 1; i >= 0; i--){
-            Destroy(transform.GetChild(i).gameObject);
+            Destroy(photoPanel.GetChild(i).gameObject);
         }
    }
  

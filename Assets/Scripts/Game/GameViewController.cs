@@ -14,7 +14,8 @@ public class GameViewController : MonoBehaviour, ISaveable {
     private void Awake() {
         instance = this;
         
-        GenerateGameData();
+        //GenerateGameData();
+        LoadFromGameData();
     }
 
     public void GenerateGameData(){

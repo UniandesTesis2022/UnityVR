@@ -14,4 +14,8 @@ public class PhotoBtn : MonoBehaviour
         animalName.text = pName;
     }
 
+    public void SetUp(string pName){
+        animalName.text = pName;
+    }
+
 }
