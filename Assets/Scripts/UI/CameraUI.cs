@@ -17,4 +17,9 @@ public class CameraUI : MonoBehaviour
     public void StopFocus(){
         animator.SetBool("focus", false);
     }
+
+    private void OnDisable()
+    {
+        animator.SetBool("focus", false);
+    }
 }

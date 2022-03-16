@@ -5,6 +5,8 @@ using UnityEngine;
 public class ButtonMap : MonoBehaviour
 {
     [SerializeField] GameObject menuUI;
+    [SerializeField] GameObject cameraUI;
+    [SerializeField] CameraZoom cameraZoom;
 
     private bool activeMenu;
 
@@ -22,16 +24,26 @@ public class ButtonMap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && !activeMenu)
+        if (!activeMenu)
         {
-            Debug.Log("Index");
-            animalScan.CaptureScreen();
+            var inputY = -1*OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).y;
+            if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && !activeMenu)
+            {
+                Debug.Log("Index");
+                animalScan.CaptureScreen();
+            }
+            if(inputY != 0 )
+            {
+                cameraZoom.ModifyFieldOfView(inputY);
+            }
         }
+        
         if (OVRInput.GetDown(OVRInput.Button.Start))
         {
             Debug.Log("Start");
             activeMenu = !activeMenu;
             menuUI.SetActive(activeMenu);
+            cameraUI.SetActive(!cameraUI.activeSelf);
 
             Time.timeScale = activeMenu ? 0 : 1;
         }
