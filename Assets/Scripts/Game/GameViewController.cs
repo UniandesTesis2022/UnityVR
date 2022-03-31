@@ -15,6 +15,7 @@ public class GameViewController : MonoBehaviour, ISaveable {
         instance = this;
         
         GenerateGameData();
+        //LoadFromGameData();
     }
 
     public void GenerateGameData(){
