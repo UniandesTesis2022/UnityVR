@@ -10,10 +10,13 @@ public class AnimalScan : MonoBehaviour
     [SerializeField] Camera photoCamera; 
     [SerializeField] CameraUI cameraUi;
 
+    public PlayerSounds playerSounds;
+
     private RaycastHit hit;
     private float CameraRange = 500;
 
-    private Animal currentAnimal;
+    private Animal currentAnimal;    
+    
 
     // Update is called once per frame
     void Update()
@@ -42,6 +45,7 @@ public class AnimalScan : MonoBehaviour
         Debug.Log("Capture");
         if (currentAnimal != null){
             cameraUi.gameObject.SetActive(false);
+            playerSounds.Shoot();
             ScreenshotHandler.TakePhoto(photoCamera, currentAnimal.specie.ToString(), currentAnimal.name);
             cameraUi.gameObject.SetActive(true);
 

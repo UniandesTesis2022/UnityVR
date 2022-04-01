@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class PlayerSounds : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] private AudioSource shotAudio;
+    [SerializeField] private AudioSource zoomAudio;
+    [SerializeField] private AudioClip forwardSound;
+    [SerializeField] private AudioClip rewindSound;
+
+    public void Shoot(){
+        shotAudio.Play();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void ZoomIn(){
+        if(!zoomAudio.isPlaying || zoomAudio.clip != forwardSound){
+            zoomAudio.PlayOneShot(forwardSound);
+        }
+    }
+
+    public void ZoomOut(){
+        if(!zoomAudio.isPlaying || zoomAudio.clip != rewindSound){
+            zoomAudio.PlayOneShot(rewindSound);
+        }
+    }
+
+    public void StopZoom(){
+        zoomAudio.Stop();
     }
 }
