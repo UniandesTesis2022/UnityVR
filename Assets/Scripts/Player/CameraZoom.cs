@@ -30,6 +30,22 @@ public class CameraZoom : MonoBehaviour
 
         distFOV = maxFOV - minFOV;
         distCorner = maxCornerX - minCornerX;
+
+
+        photoCamera.fieldOfView = maxFOV;
+        fieldOfViewText.text = photoCamera.fieldOfView.ToString();
+
+        float distanceX = ((photoCamera.fieldOfView - minFOV) / distFOV) * distCorner + minCornerX;
+        float distanceY = ( ((photoCamera.fieldOfView - minFOV) / distFOV) * distCorner / 2 ) + minCornerY;
+
+        Vector3 actualPosition;
+        foreach (Transform item in corners)
+        {
+            actualPosition = item.localPosition;
+            actualPosition.x = actualPosition.x > 0 ? distanceX : -distanceX;
+            actualPosition.y = actualPosition.y > 0 ? distanceY : -distanceY;
+            item.localPosition = actualPosition;
+        }
     }
 
     // Update is called once per frame
@@ -44,6 +60,7 @@ public class CameraZoom : MonoBehaviour
          || (pChange < 0 && photoCamera.fieldOfView > minFOV) )
         {
             photoCamera.fieldOfView += pChange;
+
             if(photoCamera.fieldOfView < minFOV)
             {
                 photoCamera.fieldOfView = minFOV;
@@ -54,7 +71,7 @@ public class CameraZoom : MonoBehaviour
             }
 
             float distanceX = ((photoCamera.fieldOfView - minFOV) / distFOV) * distCorner + minCornerX;
-            float distanceY = ((photoCamera.fieldOfView - minFOV) / distFOV) * distCorner + minCornerY;
+            float distanceY = ( ((photoCamera.fieldOfView - minFOV) / distFOV) * distCorner ) / 2 + minCornerY;
 
             Vector3 actualPosition;
             foreach (Transform item in corners)

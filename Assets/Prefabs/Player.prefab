@@ -1080,7 +1080,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0c445420c91b0fa40af330235dfcc7e8, type: 2}
+  - {fileID: 2100000, guid: 095b02c7a31fe104b8c4bb8f3c5678d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3126,7 +3126,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b55ed1e5ad6074199f8a7f2577a53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photoCamera: {fileID: 0}
   fieldOfViewText: {fileID: 6002641806516272893}
+  corners: {fileID: 0}
+  minFOV: 0
+  maxFOV: 0
+  minCornerX: 0
+  maxCornerX: 0
+  minCornerY: 0
 --- !u!1001 &7725732389536222397
 PrefabInstance:
   m_ObjectHideFlags: 0
