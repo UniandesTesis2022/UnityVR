@@ -26,6 +26,9 @@ public class PlayerSounds : MonoBehaviour
     }
 
     public void StopZoom(){
-        zoomAudio.Stop();
+        if(zoomAudio.isPlaying){
+            zoomAudio.clip = null;
+            zoomAudio.Stop();
+        }
     }
 }

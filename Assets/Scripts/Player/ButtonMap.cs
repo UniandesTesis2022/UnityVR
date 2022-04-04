@@ -42,6 +42,12 @@ public class ButtonMap : MonoBehaviour
                         animalScan.playerSounds.ZoomOut();
                     }
                 }
+                else{
+                    animalScan.playerSounds.StopZoom();
+                }
+            }
+            else{
+                animalScan.playerSounds.StopZoom();
             }
         }
         

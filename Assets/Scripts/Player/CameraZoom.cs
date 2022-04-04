@@ -25,14 +25,11 @@ public class CameraZoom : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        photoCamera.fieldOfView = minFOV;
         fieldOfViewText.text = photoCamera.fieldOfView.ToString();
 
         distFOV = maxFOV - minFOV;
         distCorner = maxCornerX - minCornerX;
-
-
-        photoCamera.fieldOfView = maxFOV;
-        fieldOfViewText.text = photoCamera.fieldOfView.ToString();
     }
 
     // Update is called once per frame
