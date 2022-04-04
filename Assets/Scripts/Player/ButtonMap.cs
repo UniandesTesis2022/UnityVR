@@ -34,7 +34,20 @@ public class ButtonMap : MonoBehaviour
             }
             if(inputY != 0 )
             {
-                cameraZoom.ModifyFieldOfView(inputY);
+                if(cameraZoom.ModifyFieldOfView(inputY)){
+                    if(inputY > 0){
+                        animalScan.playerSounds.ZoomIn();
+                    }
+                    else{
+                        animalScan.playerSounds.ZoomOut();
+                    }
+                }
+                else{
+                    animalScan.playerSounds.StopZoom();
+                }
+            }
+            else{
+                animalScan.playerSounds.StopZoom();
             }
         }
         
