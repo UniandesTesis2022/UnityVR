@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 700556069687987199}
   - component: {fileID: 700556069687987196}
   m_Layer: 0
-  m_Name: BlueButterfly
+  m_Name: Morpho anaxibia
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Blue Butterfly
+    name: Morpho anaxabia
     specie: 3
 --- !u!114 &700556069687987196
 MonoBehaviour:
@@ -277,9 +277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87cc9e84190e89f4aaa933b55e038865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
-  speedY: 1.3
   pivot: {fileID: 0}
+  right: 0
   range: 0.3
 --- !u!1 &700556134412148827
 GameObject:

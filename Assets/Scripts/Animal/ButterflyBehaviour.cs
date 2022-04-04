@@ -29,7 +29,7 @@ public class ButterflyBehaviour : MonoBehaviour
 
         heightDirection = transform.up;
 
-        speed = Random.Range(40,60);
+        speed = Random.Range(20,50);
         speedY = Random.Range(0.8f, 1.5f);
 
         if(right)
