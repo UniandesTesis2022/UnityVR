@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class IngameMenuUI : MonoBehaviour
 {
-    [SerializeField] GameObject player;
-
     [SerializeField] Transform speciesPanel;
 
     [SerializeField] GameObject speciePrefab;
@@ -15,8 +13,6 @@ public class IngameMenuUI : MonoBehaviour
     [SerializeField] Transform photoPanel;
 
     [SerializeField] GameObject photoPrefab;
-
-    [SerializeField] Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +22,6 @@ public class IngameMenuUI : MonoBehaviour
     }
     
     private void OnEnable() {
-        transform.position = player.transform.position + offset; 
         RenderPhotos(Animal.species.SPHERE);
     }
 

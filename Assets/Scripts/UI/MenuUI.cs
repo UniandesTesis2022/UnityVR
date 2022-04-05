@@ -5,18 +5,26 @@ using UnityEngine;
 public class MenuUI : MonoBehaviour
 {
     [SerializeField] private GameObject ingameMenu;
-    [SerializeField] private GameObject initialValue;
+    [SerializeField] private GameObject initialMenu;
+
+    [SerializeField] GameObject player;
+    [SerializeField] Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
     {
         ingameMenu.SetActive(false);
-        initialValue.SetActive(false);
+        initialMenu.SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        transform.position = player.transform.position + offset;
+    }
+
+    public void StartGame()
+    {
+        ingameMenu.SetActive(true);
+        initialMenu.SetActive(false);
     }
 }
