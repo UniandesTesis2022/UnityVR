@@ -7,11 +7,11 @@ public class SpeciesBtn : MonoBehaviour
 {
     [SerializeField] private Text text;
 
-    private MenuUI menu;
+    private IngameMenuUI menu;
 
     private Animal.species specie;
 
-    public void SetUp(MenuUI pMenu, Animal.species pSpecie){
+    public void SetUp(IngameMenuUI pMenu, Animal.species pSpecie){
         specie = pSpecie;
         menu = pMenu;
 
