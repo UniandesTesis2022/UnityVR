@@ -20,6 +20,11 @@ public class ScreenshotHandler : MonoBehaviour {
         instance.CaptureSavePhoto(camera, folder, name);
     }
 
+    public static void DeletePhotos()
+    {
+        FileManager.DeleteFilesInFolder(instance.savePath);
+    }
+
     public void CaptureSavePhoto(Camera camera, string folder, string name){
 
         Vector2 size = new Vector2(Screen.currentResolution.width, Screen.currentResolution.height);

@@ -22,6 +22,12 @@ public class FileManager {
         return false;
     }
 
+    public static void DeleteFilesInFolder(string path)
+    {
+        if (Directory.Exists(path)) { Directory.Delete(path, true); }
+        Directory.CreateDirectory(path);
+    }
+
     public static bool WriteToFile(string pFileName, string pFileContent){
         var fullPath = Path.Combine(Application.persistentDataPath, pFileName);
 
