@@ -9,7 +9,7 @@ public class Animal : IComparable
     public string name;
 
     public enum species{
-        SPHERE, SQUARE
+        SPHERE, SQUARE, BIRD, BUTTERFLY
     }
 
     public species specie;
