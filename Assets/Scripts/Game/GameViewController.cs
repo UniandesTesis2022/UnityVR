@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameViewController : MonoBehaviour, ISaveable {
     
@@ -9,11 +10,15 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     private List<SaveData.AnimalPhoto> animalPhotos;
 
-    private static GameViewController instance;
+    public static GameViewController instance;
+
+    private float duration;
+
+    public bool isPlaying;
 
     private void Awake() {
         instance = this;
-        
+
         GenerateGameData();
         ScreenshotHandler.DeletePhotos();
         //LoadFromGameData();
@@ -103,5 +108,10 @@ public class GameViewController : MonoBehaviour, ISaveable {
         allAnimals = pGameData.ReturnDictionary();
     }
 
-    
+    public static void SetTime(float pSeconds)
+    {
+        instance.isPlaying = true;
+        instance.duration = pSeconds;
+        SceneManager.LoadScene("FirstEscenario");
+    }
 }
