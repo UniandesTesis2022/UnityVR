@@ -17,12 +17,11 @@ public class ButtonMap : MonoBehaviour
     void Start()
     {
         animalScan = GetComponent<AnimalScan>();
-
-        cameraUI.SetActive(false);
         animalScan.enabled = false;
         activeMenu = false;
         menuInteraction = false;
 
+        cameraUI.SetActive(false);
         menuUI.SetActive(true);
     }
 
@@ -71,7 +70,15 @@ public class ButtonMap : MonoBehaviour
     {
         activeMenu = false;
         menuInteraction = true;
-
+        cameraUI.SetActive(true);
         animalScan.enabled = true;
+    }
+
+    public void DisableInput()
+    {
+        activeMenu = true;
+        menuInteraction = false;
+        cameraUI.SetActive(true);
+        animalScan.enabled = false;
     }
 }

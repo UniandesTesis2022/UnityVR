@@ -18,11 +18,11 @@ public class IngameMenuUI : MonoBehaviour
     void Start()
     {
         RenderSpecies();
-        RenderPhotos(Animal.species.SPHERE);
+        RenderPhotos(Animal.species.BUTTERFLY);
     }
     
     private void OnEnable() {
-        RenderPhotos(Animal.species.SPHERE);
+        RenderPhotos(Animal.species.BUTTERFLY);
     }
 
     private void RenderSpecies(){   

@@ -46,6 +46,11 @@ public class AnimalScan : MonoBehaviour
         if (currentAnimal != null){
             cameraUi.gameObject.SetActive(false);
             playerSounds.Shoot();
+
+            if (!ScreenshotHandler.PhotoExists(currentAnimal.specie.ToString(), currentAnimal.name))
+            {
+                GameplayManager.instance.AddPicture();
+            }
             ScreenshotHandler.TakePhoto(photoCamera, currentAnimal.specie.ToString(), currentAnimal.name);
             cameraUi.gameObject.SetActive(true);
 

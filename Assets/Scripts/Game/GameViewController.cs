@@ -12,7 +12,7 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public static GameViewController instance;
 
-    private float duration;
+    public float duration;
 
     public bool isPlaying;
 
@@ -52,6 +52,18 @@ public class GameViewController : MonoBehaviour, ISaveable {
             return new List<Animal>();
         }
         
+    }
+
+    public static List<Animal> GetAllAnimals()
+    {
+        List<Animal> returnList = new List<Animal>();
+
+        foreach (KeyValuePair<Animal.species, List<Animal>> animalList in instance.allAnimals)
+        {
+            returnList.AddRange(animalList.Value);
+        }
+
+        return returnList;
     }
 
     public static void SaveJsonData(){
