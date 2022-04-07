@@ -10,7 +10,7 @@ public class ScreenshotHandler : MonoBehaviour {
     [SerializeField] GameObject uiPlayer;
 
     //Save path
-    public string savePath = "Photos/";
+    public static string savePath = "Photos/";
 
     private void Awake() {
         instance = this;
@@ -22,7 +22,7 @@ public class ScreenshotHandler : MonoBehaviour {
 
     public static void DeletePhotos()
     {
-        FileManager.DeleteFilesInFolder(instance.savePath);
+        FileManager.DeleteFilesInFolder(savePath);
     }
 
     public void CaptureSavePhoto(Camera camera, string folder, string name){
@@ -55,6 +55,6 @@ public class ScreenshotHandler : MonoBehaviour {
 
     public static bool PhotoExists(string folder, string name)
     {
-        return FileManager.FileExists(instance.savePath + folder, name);
+        return FileManager.FileExists(savePath + folder, name);
     }
 }

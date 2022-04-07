@@ -313,7 +313,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6954501901952941193
 MonoBehaviour:
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     name: Crow
-    specie: 2
+    specie: 0
 --- !u!114 &6955202136378843565
 MonoBehaviour:
   m_ObjectHideFlags: 0

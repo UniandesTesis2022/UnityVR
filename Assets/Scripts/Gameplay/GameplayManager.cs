@@ -39,7 +39,7 @@ public class GameplayManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (finished)
+        if (!finished)
         {
             if (seconds > 0)
             {
@@ -63,7 +63,7 @@ public class GameplayManager : MonoBehaviour
         int minutes = intSeconds / 60;
         int newSeconds = intSeconds % 60;
 
-        timeTxt.text = minutes + ":" + (newSeconds >= 10? "0":"") + newSeconds;
+        timeTxt.text = (minutes >= 10 ? "" : "0") + minutes + ":" + (newSeconds >= 10? "":"0") + newSeconds;
     }
 
     public void AddPicture()

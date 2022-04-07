@@ -328,7 +328,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1693841305
+--- !u!1 &1652764244
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,50 +336,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1693841306}
-  - component: {fileID: 1693841308}
-  - component: {fileID: 1693841307}
+  - component: {fileID: 1652764245}
+  - component: {fileID: 1652764247}
+  - component: {fileID: 1652764246}
   m_Layer: 5
-  m_Name: TimeText
+  m_Name: TimeNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1693841306
+--- !u!224 &1652764245
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693841305}
+  m_GameObject: {fileID: 1652764244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 70.125, y: 70.125, z: 70.125}
   m_Children: []
-  m_Father: {fileID: 54894279220097291}
+  m_Father: {fileID: 3370809618203888350}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.489, y: 1.743}
+  m_AnchoredPosition: {x: -65.4, y: 0}
   m_SizeDelta: {x: 1.6, y: 0.3}
   m_Pivot: {x: 0.52867264, y: 0.5}
---- !u!222 &1693841308
+--- !u!222 &1652764247
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693841305}
+  m_GameObject: {fileID: 1652764244}
   m_CullTransparentMesh: 1
---- !u!114 &1693841307
+--- !u!114 &1652764246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693841305}
+  m_GameObject: {fileID: 1652764244}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Tiempo restante:'
+  m_text: 00:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &1799629072
+--- !u!1 &1693841305
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -470,50 +470,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1799629073}
-  - component: {fileID: 1799629074}
-  - component: {fileID: 1799629075}
+  - component: {fileID: 1693841306}
+  - component: {fileID: 1693841308}
+  - component: {fileID: 1693841307}
   m_Layer: 5
-  m_Name: TimeNumber
+  m_Name: TimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1799629073
+--- !u!224 &1693841306
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799629072}
+  m_GameObject: {fileID: 1693841305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 54894279220097291}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.489, y: 1.43}
+  m_AnchoredPosition: {x: 1.489, y: 1.743}
   m_SizeDelta: {x: 1.6, y: 0.3}
   m_Pivot: {x: 0.52867264, y: 0.5}
---- !u!222 &1799629074
+--- !u!222 &1693841308
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799629072}
+  m_GameObject: {fileID: 1693841305}
   m_CullTransparentMesh: 1
---- !u!114 &1799629075
+--- !u!114 &1693841307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799629072}
+  m_GameObject: {fileID: 1693841305}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -527,7 +527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 00:00
+  m_text: 'Tiempo restante:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1240,7 +1240,7 @@ RectTransform:
   - {fileID: 7725732389299256664}
   - {fileID: 7725732387840353455}
   - {fileID: 1693841306}
-  - {fileID: 1799629073}
+  - {fileID: 6917956346012769269}
   m_Father: {fileID: 7725732388969672466}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1854,6 +1854,7 @@ RectTransform:
   m_Children:
   - {fileID: 2978688228816459353}
   - {fileID: 1906743897145268319}
+  - {fileID: 1652764245}
   m_Father: {fileID: 4215280621275619682}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1879,7 +1880,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2471,7 +2472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1256975872988354105
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2485,7 +2486,6 @@ RectTransform:
   m_Children:
   - {fileID: 6847534563195957571}
   - {fileID: 7633555029908701866}
-  - {fileID: 6917956346012769269}
   m_Father: {fileID: 7725732388969672466}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2922,8 +2922,9 @@ MonoBehaviour:
   initialMenu: {fileID: 7455784744451066450}
   countdownUI: {fileID: 4330204683485402483}
   ingameMenu: {fileID: 1815835714404368921}
-  finalMenu: {fileID: 0}
+  finalMenu: {fileID: 5265569180896536276}
   buttonMap: {fileID: 3523802691651236853}
+  gameplayManager: {fileID: 0}
   player: {fileID: 5604898863674830449}
   offset: {x: 0, y: 2, z: 3}
 --- !u!1 &5808469064287639126
@@ -3085,7 +3086,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 300
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -3299,7 +3300,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 500
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -3511,7 +3512,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 200
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -4635,8 +4636,8 @@ RectTransform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_Children:
   - {fileID: 5848120600495413392}
-  m_Father: {fileID: 1256975872988354105}
-  m_RootOrder: 2
+  m_Father: {fileID: 54894279220097291}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
