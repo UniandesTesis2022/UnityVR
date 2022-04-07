@@ -58,6 +58,12 @@ public class FileManager {
         return false;
     }
 
+    public static bool FileExists(string pFolder, string pFileName)
+    {
+        var fullPath = Path.Combine(Application.persistentDataPath, pFolder, pFileName) + ".jpg";
+        return File.Exists(fullPath);
+    }
+
     public static bool LoadFromFile(string pFileName, out Texture2D result){
         var fullPath = Path.Combine(Application.persistentDataPath, pFileName);
 

@@ -9,6 +9,7 @@ public class ButtonMap : MonoBehaviour
     [SerializeField] CameraZoom cameraZoom;
 
     private bool activeMenu;
+    private bool menuInteraction;
 
     private AnimalScan animalScan;
 
@@ -16,9 +17,12 @@ public class ButtonMap : MonoBehaviour
     void Start()
     {
         animalScan = GetComponent<AnimalScan>();
-
+        animalScan.enabled = false;
         activeMenu = false;
-        menuUI.SetActive(false);
+        menuInteraction = false;
+
+        cameraUI.SetActive(false);
+        menuUI.SetActive(true);
     }
 
     // Update is called once per frame
@@ -51,7 +55,7 @@ public class ButtonMap : MonoBehaviour
             }
         }
         
-        if (OVRInput.GetDown(OVRInput.Button.Start))
+        if (menuInteraction && OVRInput.GetDown(OVRInput.Button.Start))
         {
             Debug.Log("Start");
             activeMenu = !activeMenu;
@@ -60,5 +64,21 @@ public class ButtonMap : MonoBehaviour
 
             Time.timeScale = activeMenu ? 0 : 1;
         }
+    }
+
+    public void AllowInput()
+    {
+        activeMenu = false;
+        menuInteraction = true;
+        cameraUI.SetActive(true);
+        animalScan.enabled = true;
+    }
+
+    public void DisableInput()
+    {
+        activeMenu = true;
+        menuInteraction = false;
+        cameraUI.SetActive(true);
+        animalScan.enabled = false;
     }
 }

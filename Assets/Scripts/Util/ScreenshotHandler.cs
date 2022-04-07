@@ -52,4 +52,9 @@ public class ScreenshotHandler : MonoBehaviour {
 
         return texture;
     }
+
+    public static bool PhotoExists(string folder, string name)
+    {
+        return FileManager.FileExists(instance.savePath + folder, name);
+    }
 }
