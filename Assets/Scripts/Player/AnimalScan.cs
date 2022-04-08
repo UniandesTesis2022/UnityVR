@@ -49,7 +49,8 @@ public class AnimalScan : MonoBehaviour
             {
                 GameplayManager.AddPicture();
             }
-            ScreenshotHandler.TakePhoto(cameraPhoto, currentAnimal.specie.ToString(), currentAnimal.name);
+            Texture2D photo = ScreenshotHandler.TakePhoto(cameraPhoto, currentAnimal.specie.ToString(), currentAnimal.name);
+
         }
     }
 }
