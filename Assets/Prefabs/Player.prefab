@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 131686608}
   - component: {fileID: 131686609}
-  - component: {fileID: 131686610}
   m_Layer: 0
   m_Name: Tablet
   m_TagString: Untagged
@@ -47,22 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad17188ffb4d91a44aa1b62e40c8e47d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
---- !u!114 &131686610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131686607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46b55ed1e5ad6074199f8a7f2577a53e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  movementSpeed: 5
   photoCamera: {fileID: 3178617519039568867}
   fieldOfViewText: {fileID: 6002641806516272893}
-  corners: {fileID: 2978688228816459353}
   minFOV: 7
   maxFOV: 23
 --- !u!1 &489115263
@@ -2939,8 +2925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuUI: {fileID: 5604898863674830450}
-  cameraUI: {fileID: 3178617518479628524}
-  cameraZoom: {fileID: 0}
+  tablet: {fileID: 131686609}
 --- !u!1 &5604898863674830450
 GameObject:
   m_ObjectHideFlags: 0

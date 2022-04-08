@@ -16,8 +16,8 @@ public class ScreenshotHandler : MonoBehaviour {
         instance = this;
     }
 
-    public static void TakePhoto(Camera camera, string folder, string name){
-        instance.CaptureSavePhoto(camera, folder, name);
+    public static Texture2D TakePhoto(Camera camera, string folder, string name){
+        return instance.CaptureSavePhoto(camera, folder, name);
     }
 
     public static void DeletePhotos()
@@ -25,8 +25,10 @@ public class ScreenshotHandler : MonoBehaviour {
         FileManager.DeleteFilesInFolder(savePath);
     }
 
-    public void CaptureSavePhoto(Camera camera, string folder, string name){
-        FileManager.WriteToFile(savePath + folder, name, capture(camera));
+    public Texture2D CaptureSavePhoto(Camera camera, string folder, string name){
+        Texture2D photo = capture(camera);
+        FileManager.WriteToFile(savePath + folder, name, photo);
+        return photo;
     }
 
     public static Texture2D capture(Camera camera) {
