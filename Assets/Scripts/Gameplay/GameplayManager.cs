@@ -33,7 +33,7 @@ public class GameplayManager : MonoBehaviour
         TranslateSeconds();
 
         total = GameViewController.GetAllAnimals().Count;
-
+        pictures = 0;
     }
 
     // Update is called once per frame
@@ -66,9 +66,17 @@ public class GameplayManager : MonoBehaviour
         timeTxt.text = (minutes >= 10 ? "" : "0") + minutes + ":" + (newSeconds >= 10? "":"0") + newSeconds;
     }
 
-    public void AddPicture()
+    public static void AddPicture()
     {
-        pictures++;
+        Debug.Log("To add");
+        if (instance != null)
+        {
+            instance.pictures++;
+        }
+        else
+        {
+            Debug.Log("Wtf");
+        }
     }
 
     public void FinishGame()

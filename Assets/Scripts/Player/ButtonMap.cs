@@ -5,8 +5,7 @@ using UnityEngine;
 public class ButtonMap : MonoBehaviour
 {
     [SerializeField] GameObject menuUI;
-    [SerializeField] GameObject cameraUI;
-    [SerializeField] CameraZoom cameraZoom;
+    [SerializeField] TabletManager tablet;
 
     private bool activeMenu;
     private bool menuInteraction;
@@ -21,7 +20,7 @@ public class ButtonMap : MonoBehaviour
         activeMenu = false;
         menuInteraction = false;
 
-        cameraUI.SetActive(false);
+        tablet.gameObject.SetActive(false);
         menuUI.SetActive(true);
     }
 
@@ -38,7 +37,7 @@ public class ButtonMap : MonoBehaviour
             }
             if(inputY != 0 )
             {
-                if(cameraZoom.ModifyFieldOfView(inputY)){
+                if(tablet.ModifyFieldOfView(inputY)){
                     if(inputY > 0){
                         animalScan.playerSounds.ZoomIn();
                     }
@@ -60,7 +59,7 @@ public class ButtonMap : MonoBehaviour
             Debug.Log("Start");
             activeMenu = !activeMenu;
             menuUI.SetActive(activeMenu);
-            cameraUI.SetActive(!cameraUI.activeSelf);
+            tablet.gameObject.SetActive(!tablet.gameObject.activeSelf);
 
             Time.timeScale = activeMenu ? 0 : 1;
         }
@@ -70,7 +69,7 @@ public class ButtonMap : MonoBehaviour
     {
         activeMenu = false;
         menuInteraction = true;
-        cameraUI.SetActive(true);
+        tablet.gameObject.SetActive(true);
         animalScan.enabled = true;
     }
 
@@ -78,7 +77,7 @@ public class ButtonMap : MonoBehaviour
     {
         activeMenu = true;
         menuInteraction = false;
-        cameraUI.SetActive(true);
+        tablet.gameObject.SetActive(true);
         animalScan.enabled = false;
     }
 }
