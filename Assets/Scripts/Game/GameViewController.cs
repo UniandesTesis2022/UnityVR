@@ -12,17 +12,29 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public static GameViewController instance;
 
-    public float duration;
+    static public float duration;
 
     public bool isPlaying;
 
     private void Awake() {
-        instance = this;
+        if(instance == null)
+        {
+            instance = this;
+        }
 
         GenerateGameData();
         ScreenshotHandler.DeletePhotos();
         //LoadFromGameData();
     }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("OnSceneLoaded: " + scene.name);
+        Debug.Log(mode);
+        GenerateGameData();
+        ScreenshotHandler.DeletePhotos();
+    }
+
 
     public void GenerateGameData(){
         allAnimals = new Dictionary<Animal.species, List<Animal>>();
@@ -32,12 +44,15 @@ public class GameViewController : MonoBehaviour, ISaveable {
         }
 
         AnimalObject[] animalsObjects = FindObjectsOfType<AnimalObject>();
+        List<string> animalNames = new List<string>();
+
         foreach (AnimalObject item in animalsObjects)
         {
             allAnimals.TryGetValue(item.animal.specie, out List<Animal> currentList);
-            if(!currentList.Contains(item.animal)){
+            if(currentList != null && !animalNames.Contains(item.animal.name)){
                 currentList.Add(item.animal);
                 allAnimals[item.animal.specie] = currentList;
+                animalNames.Add(item.animal.name);
             }
         }
 
@@ -46,7 +61,7 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public static List<Animal> GetAnimalsBySpecie(Animal.species pSpecie){
         
-        if(instance.allAnimals.TryGetValue(pSpecie, out List<Animal> returnList)){
+        if(instance != null && instance.allAnimals.TryGetValue(pSpecie, out List<Animal> returnList)){
             return returnList;
         }else{
             return new List<Animal>();
@@ -122,8 +137,7 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public static void SetTime(float pSeconds)
     {
-        instance.isPlaying = true;
-        instance.duration = pSeconds;
+        duration = pSeconds;
         SceneManager.LoadScene("FirstEscenario");
     }
 }

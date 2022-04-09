@@ -10,51 +10,45 @@ public class ScreenshotHandler : MonoBehaviour {
     [SerializeField] GameObject uiPlayer;
 
     //Save path
-    public string savePath = "Photos/";
+    public static string savePath = "Photos";
 
     private void Awake() {
         instance = this;
     }
 
-    public static void TakePhoto(Camera camera, string folder, string name){
-        instance.CaptureSavePhoto(camera, folder, name);
+    public static Texture2D TakePhoto(Camera camera, string folder, string name){
+        return instance.CaptureSavePhoto(camera, folder, name);
     }
 
     public static void DeletePhotos()
     {
-        FileManager.DeleteFilesInFolder(instance.savePath);
+        FileManager.DeleteFilesInFolder(savePath);
     }
 
-    public void CaptureSavePhoto(Camera camera, string folder, string name){
-
-        Vector2 size = new Vector2(Screen.currentResolution.width, Screen.currentResolution.height);
-        FileManager.WriteToFile(savePath + folder, name, capture(camera, (int)size.x, (int)size.y));
+    public Texture2D CaptureSavePhoto(Camera camera, string folder, string name){
+        Texture2D photo = capture(camera);
+        FileManager.WriteToFile(Path.Combine(savePath, folder), name.Replace(" ", ""), photo);
+        return photo;
     }
 
-    public static Texture2D capture(Camera camera, int width, int height) {
-        RenderTexture rt = new RenderTexture(width, height, 0);
+    public static Texture2D capture(Camera camera) {
+        Camera original = Camera.main;
 
-        rt.depth = 24;
-        rt.antiAliasing = 8;
-
-        camera.targetTexture = rt;
+        RenderTexture.active = camera.targetTexture;
         camera.RenderDontRestore();
 
-        RenderTexture.active = rt;
-        Texture2D texture = new Texture2D(width, height, TextureFormat.ARGB32, false, true);
-        Rect rect = new Rect(0, 0, width, height);
-        texture.ReadPixels(rect, 0, 0);
-        texture.filterMode = FilterMode.Point;
-        texture.Apply();
-        camera.targetTexture = null;
-        RenderTexture.active = null;
-        Destroy(rt);
+        Texture2D tex = new Texture2D(camera.targetTexture.width, camera.targetTexture.height, TextureFormat.RGB24, false);
+        // ReadPixels looks at the active RenderTexture.
+        tex.ReadPixels(new Rect(0, 0, camera.targetTexture.width, camera.targetTexture.height), 0, 0);
+        tex.Apply();
 
-        return texture;
+        RenderTexture.active = original.targetTexture;
+
+        return tex;
     }
 
     public static bool PhotoExists(string folder, string name)
     {
-        return FileManager.FileExists(instance.savePath + folder, name);
+        return FileManager.FileExists(Path.Combine(savePath, folder), name.Replace(" ",""));
     }
 }

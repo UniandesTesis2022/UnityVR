@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour
 {
@@ -11,17 +12,17 @@ public class MenuUI : MonoBehaviour
     [SerializeField] private GameObject finalMenu;
 
     [SerializeField] private ButtonMap buttonMap;
+    [SerializeField] private GameObject gameplayManager;
 
     [SerializeField] GameObject player;
     [SerializeField] Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
-    {        
+    {
         if (GameViewController.instance.isPlaying)
         {
             countdownUI.SetActive(true);
-            gameObject.SetActive(false);
         }
         else
         {
@@ -48,7 +49,13 @@ public class MenuUI : MonoBehaviour
         ingameMenu.SetActive(true);
         gameObject.SetActive(false);
 
-        FindObjectOfType<GameplayManager>().gameObject.SetActive(true);
+        gameplayManager.SetActive(true);
+    }
+
+    public void GoToMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("CameraTest");
     }
 
     public void FinishGame(int pPictures, int pTotal)
