@@ -273,7 +273,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6759733143348915549}
-  m_LocalRotation: {x: -0, y: 0.42261827, z: -0, w: 0.9063079}
+  m_LocalRotation: {x: 0, y: 0.42261827, z: 0, w: 0.9063079}
   m_LocalPosition: {x: -1.867, y: 1.553, z: -8.455}
   m_LocalScale: {x: 0.30000004, y: 0.3, z: 0.30000004}
   m_Children:
@@ -329,6 +329,7 @@ MonoBehaviour:
   animal:
     name: Anthocharis belia
     specie: 1
+    image: {fileID: 21300000, guid: 3cbddac46379dbc41871d4b7851cf800, type: 3}
 --- !u!114 &6759733143348915548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pivot: {fileID: 0}
-  right: 1
+  right: 0
   range: 0.3
 --- !u!1 &6759771263353877673
 GameObject:

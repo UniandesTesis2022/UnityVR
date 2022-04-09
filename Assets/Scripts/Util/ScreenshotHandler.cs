@@ -10,7 +10,7 @@ public class ScreenshotHandler : MonoBehaviour {
     [SerializeField] GameObject uiPlayer;
 
     //Save path
-    public static string savePath = "Photos/";
+    public static string savePath = "Photos";
 
     private void Awake() {
         instance = this;
@@ -27,7 +27,7 @@ public class ScreenshotHandler : MonoBehaviour {
 
     public Texture2D CaptureSavePhoto(Camera camera, string folder, string name){
         Texture2D photo = capture(camera);
-        FileManager.WriteToFile(savePath + folder, name, photo);
+        FileManager.WriteToFile(Path.Combine(savePath, folder), name.Replace(" ", ""), photo);
         return photo;
     }
 
@@ -49,6 +49,6 @@ public class ScreenshotHandler : MonoBehaviour {
 
     public static bool PhotoExists(string folder, string name)
     {
-        return FileManager.FileExists(savePath + folder, name);
+        return FileManager.FileExists(Path.Combine(savePath, folder), name.Replace(" ",""));
     }
 }

@@ -22,17 +22,18 @@ public class GameplayManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(instance != null)
+        if(instance == null)
         {
             instance = this;
         }
 
         finished = false;
-        seconds = GameViewController.instance.duration;
+        seconds = GameViewController.duration;
         intSeconds = (int)seconds;
         TranslateSeconds();
 
         total = GameViewController.GetAllAnimals().Count;
+        Debug.Log("Total " + total);
         pictures = 0;
     }
 
@@ -66,16 +67,13 @@ public class GameplayManager : MonoBehaviour
         timeTxt.text = (minutes >= 10 ? "" : "0") + minutes + ":" + (newSeconds >= 10? "":"0") + newSeconds;
     }
 
-    public static void AddPicture()
+    public void AddPicture()
     {
-        Debug.Log("To add");
-        if (instance != null)
+        pictures++;
+        Debug.Log("Nueva " + pictures);
+        if(pictures >= total)
         {
-            instance.pictures++;
-        }
-        else
-        {
-            Debug.Log("Wtf");
+            FinishGame();
         }
     }
 

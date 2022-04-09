@@ -18,11 +18,11 @@ public class IngameMenuUI : MonoBehaviour
     void Start()
     {
         RenderSpecies();
-        RenderPhotos(Animal.species.BUTTERFLY);
+        RenderPhotos(Animal.species.BIRD);
     }
     
     private void OnEnable() {
-        RenderPhotos(Animal.species.BUTTERFLY);
+        RenderPhotos(Animal.species.BIRD);
     }
 
     private void RenderSpecies(){   
@@ -43,7 +43,7 @@ public class IngameMenuUI : MonoBehaviour
         {
             GameObject newObject = Instantiate(photoPrefab, photoPanel.position, Quaternion.identity, photoPanel);
             
-            imagePath = Path.Combine(Application.persistentDataPath, "Photos", animal.specie.ToString(), animal.name + ".jpg");
+            imagePath = Path.Combine(Application.persistentDataPath, "Photos", animal.specie.ToString(), animal.name.Replace(" ", "") + ".jpg");
 
             PhotoBtn btnScript = newObject.GetComponent<PhotoBtn>();
             if(File.Exists(imagePath)){

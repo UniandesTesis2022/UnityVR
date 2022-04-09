@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class MenuUI : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
+    {
         if (GameViewController.instance.isPlaying)
         {
             countdownUI.SetActive(true);
@@ -49,6 +50,12 @@ public class MenuUI : MonoBehaviour
         gameObject.SetActive(false);
 
         gameplayManager.SetActive(true);
+    }
+
+    public void GoToMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("CameraTest");
     }
 
     public void FinishGame(int pPictures, int pTotal)

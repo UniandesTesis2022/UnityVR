@@ -14,6 +14,8 @@ public class Animal : IComparable
 
     public species specie;
 
+    public Sprite image;
+
     public Animal(species pSpecie, string pName){
         specie = pSpecie;
         name = pName;

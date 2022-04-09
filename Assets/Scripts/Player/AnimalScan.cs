@@ -47,10 +47,13 @@ public class AnimalScan : MonoBehaviour
 
             if (!ScreenshotHandler.PhotoExists(currentAnimal.specie.ToString(), currentAnimal.name))
             {
-                GameplayManager.AddPicture();
+                if(GameplayManager.instance != null)
+                {
+                    GameplayManager.instance.AddPicture();
+                }
             }
             Texture2D photo = ScreenshotHandler.TakePhoto(cameraPhoto, currentAnimal.specie.ToString(), currentAnimal.name);
-
+            cameraUi.ShowPhoto(photo, currentAnimal.image);
         }
     }
 }

@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 6955202136378843565}
   m_Layer: 0
   m_Name: BirdBlue
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +274,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6955202136378843566}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.373, y: 6.375, z: -14.695}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
@@ -328,8 +328,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Crow
+    name: Thraupis episcopus
     specie: 0
+    image: {fileID: 21300000, guid: 1e3a8597235fcc743ae24c91230cbe63, type: 3}
 --- !u!114 &6955202136378843565
 MonoBehaviour:
   m_ObjectHideFlags: 0

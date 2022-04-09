@@ -32,7 +32,6 @@ public class TabletManager : MonoBehaviour
 
     public bool ModifyFieldOfView(float pChange)
     {
-        Debug.Log("Modify " + pChange);
         var changed = (pChange > 0 && photoCamera.fieldOfView < maxFOV)
          || (pChange < 0 && photoCamera.fieldOfView > minFOV);
 

@@ -912,7 +912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87a986172b8f53343bf5925193846245, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87a986172b8f53343bf5925193846245, type: 3}
       propertyPath: m_LocalScale.x
@@ -1252,10 +1252,10 @@ Transform:
   - {fileID: 701090150}
   - {fileID: 842898874}
   - {fileID: 2139324511}
-  - {fileID: 974598341}
   - {fileID: 823449317}
   - {fileID: 847176331}
   - {fileID: 1156427442}
+  - {fileID: 974598341}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1362,13 +1362,13 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1401,7 +1401,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1420,7 +1420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754504983}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -1.4051056, y: 5.7548637, z: -2.567507}
+  m_LocalPosition: {x: 31.7, y: -14.2, z: 52.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 713431379}
@@ -1491,10 +1491,6 @@ PrefabInstance:
       propertyPath: pivot
       value: 
       objectReference: {fileID: 500207940}
-    - target: {fileID: 700556069687987196, guid: 63a51deaf289cb345a9b74fad2471303, type: 3}
-      propertyPath: range
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 700556069687987197, guid: 63a51deaf289cb345a9b74fad2471303, type: 3}
       propertyPath: m_Name
       value: Morpho anaxibia
@@ -1967,7 +1963,7 @@ Transform:
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 713431379}
-  m_RootOrder: 35
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &991106689
 PrefabInstance:
@@ -2544,18 +2540,6 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6958944494436983924, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958944494436983924, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958944494436983924, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6958944494436983924, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.88
       objectReference: {fileID: 0}
@@ -3025,7 +3009,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4120681629214214, guid: 08149d62d2ddb9e4293bf2bad1d446fc, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 4120681629214214, guid: 08149d62d2ddb9e4293bf2bad1d446fc, type: 3}
       propertyPath: m_LocalScale.x
@@ -3136,10 +3120,6 @@ PrefabInstance:
       propertyPath: pivot
       value: 
       objectReference: {fileID: 1156427442}
-    - target: {fileID: 6759733143348915548, guid: b7938947202006f438c4a0d8e0a26eec, type: 3}
-      propertyPath: right
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6759733143348915549, guid: b7938947202006f438c4a0d8e0a26eec, type: 3}
       propertyPath: m_Name
       value: Anthocharis belia
@@ -3464,14 +3444,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1633727031}
     m_Modifications:
-    - target: {fileID: 7838877032390737826, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
-      propertyPath: m_Radius
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7838877032390737827, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
-      propertyPath: animal.specie
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7840702066138210948, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
       propertyPath: m_Name
       value: Crow
@@ -3480,10 +3452,6 @@ PrefabInstance:
       propertyPath: pivot
       value: 
       objectReference: {fileID: 732195326}
-    - target: {fileID: 7840702066138210951, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
-      propertyPath: speed
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 7843353720609007454, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3543,7 +3511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87a986172b8f53343bf5925193846245, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87a986172b8f53343bf5925193846245, type: 3}
       propertyPath: m_LocalScale.x
@@ -3764,14 +3732,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1633727031}
     m_Modifications:
-    - target: {fileID: 6954501901952941192, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
-      propertyPath: m_Radius
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6954501901952941193, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
-      propertyPath: animal.specie
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6955202136378843565, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
       propertyPath: pivot
       value: 
@@ -3779,6 +3739,10 @@ PrefabInstance:
     - target: {fileID: 6955202136378843566, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
       propertyPath: m_Name
       value: BirdBlue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6955202136378843566, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
+      propertyPath: m_TagString
+      value: Animal
       objectReference: {fileID: 0}
     - target: {fileID: 6958944494436983924, guid: 710dd3998d0e457469923454b7e925f4, type: 3}
       propertyPath: m_RootOrder
@@ -3841,6 +3805,10 @@ PrefabInstance:
     - target: {fileID: 7840702066138210948, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
       propertyPath: m_Name
       value: Crow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840702066138210948, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
+      propertyPath: m_TagString
+      value: Animal
       objectReference: {fileID: 0}
     - target: {fileID: 7840702066138210951, guid: 3cc96e7c4a87ec640b7d0e10f9ec0d5a, type: 3}
       propertyPath: pivot

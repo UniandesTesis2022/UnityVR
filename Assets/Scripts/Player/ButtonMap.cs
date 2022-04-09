@@ -77,7 +77,7 @@ public class ButtonMap : MonoBehaviour
     {
         activeMenu = true;
         menuInteraction = false;
-        tablet.gameObject.SetActive(true);
+        tablet.gameObject.SetActive(false);
         animalScan.enabled = false;
     }
 }

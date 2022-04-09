@@ -209,7 +209,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700556069687987197}
-  m_LocalRotation: {x: -0, y: 0.42261827, z: -0, w: 0.9063079}
+  m_LocalRotation: {x: 0, y: 0.42261827, z: 0, w: 0.9063079}
   m_LocalPosition: {x: -1.719, y: 1.1509807, z: 1.315}
   m_LocalScale: {x: 0.30000004, y: 0.3, z: 0.30000004}
   m_Children:
@@ -265,6 +265,7 @@ MonoBehaviour:
   animal:
     name: Morpho anaxabia
     specie: 1
+    image: {fileID: 21300000, guid: c281b2e1a57dc7549923f948e45b0a78, type: 3}
 --- !u!114 &700556069687987196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,7 +280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 0}
   right: 0
-  range: 0.3
+  range: 0.1
 --- !u!1 &700556134412148827
 GameObject:
   m_ObjectHideFlags: 0
