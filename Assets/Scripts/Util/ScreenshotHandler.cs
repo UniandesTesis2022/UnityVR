@@ -54,23 +54,17 @@ public class ScreenshotHandler : MonoBehaviour {
     {
         RenderTexture rt = new RenderTexture(width, height, 0);
 
-        rt.depth = 24;
-        rt.antiAliasing = 8;
-
-        camera.targetTexture = rt;
+        RenderTexture.active = camera.targetTexture;
         camera.RenderDontRestore();
 
-        RenderTexture.active = rt;
-        Texture2D texture = new Texture2D(width, height, TextureFormat.ARGB32, false, true);
-        Rect rect = new Rect(0, 0, width, height);
-        texture.ReadPixels(rect, 0, 0);
-        texture.filterMode = FilterMode.Point;
-        texture.Apply();
-        camera.targetTexture = null;
-        RenderTexture.active = null;
-        Destroy(rt);
+        Texture2D tex = new Texture2D(camera.targetTexture.width, camera.targetTexture.height, TextureFormat.RGB24, false);
+        // ReadPixels looks at the active RenderTexture.
+        tex.ReadPixels(new Rect(0, 0, camera.targetTexture.width, camera.targetTexture.height), 0, 0);
+        tex.Apply();
 
-        return texture;
+        RenderTexture.active = original.targetTexture;
+
+        return tex;
     }
 
 
