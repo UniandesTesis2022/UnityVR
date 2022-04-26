@@ -37,8 +37,8 @@ public class MenuUI : MonoBehaviour
 
     public void StartGame(float pSeconds)
     {
-        GameViewController.SetTime(pSeconds);
         initialMenu.SetActive(false);
+        SceneManager.LoadScene("FirstEscenario");
     }
 
     public void ShowIngame()

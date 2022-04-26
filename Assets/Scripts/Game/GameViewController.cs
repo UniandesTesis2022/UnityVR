@@ -12,8 +12,6 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public static GameViewController instance;
 
-    static public float duration;
-
     public bool isPlaying;
 
     private void Awake() {
@@ -133,11 +131,5 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public void LoadFromGameData(GameData pGameData){
         allAnimals = pGameData.ReturnDictionary();
-    }
-
-    public static void SetTime(float pSeconds)
-    {
-        duration = pSeconds;
-        SceneManager.LoadScene("FirstEscenario");
     }
 }

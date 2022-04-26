@@ -7,7 +7,7 @@ public class AnimalScan : MonoBehaviour
 {
     // Camera 
     [SerializeField] Camera cameraPhoto; 
-    [SerializeField] CameraUI cameraUi;
+    [SerializeField] CameraUI cameraUI;
 
     public PlayerSounds playerSounds;
 
@@ -25,16 +25,16 @@ public class AnimalScan : MonoBehaviour
                 var animal = hit.transform.gameObject.GetComponent<AnimalObject>().animal;
                 if(animal != null){
                     currentAnimal = animal;
-                    cameraUi.StartFocus();
+                    cameraUI.StartFocus();
                 }
             }
             else{
-                cameraUi.StopFocus();
+                cameraUI.StopFocus();
                 currentAnimal = null;
             }
         }
         else{
-            cameraUi.StopFocus();
+            cameraUI.StopFocus();
             currentAnimal = null;
         }
     }
@@ -53,7 +53,7 @@ public class AnimalScan : MonoBehaviour
                 }
             }
             Texture2D photo = ScreenshotHandler.TakePhoto(cameraPhoto, currentAnimal.specie.ToString(), currentAnimal.name);
-            cameraUi.ShowPhoto(photo, currentAnimal.image);
+            cameraUI.ShowPhoto(photo, currentAnimal.image);
         }
     }
 }
