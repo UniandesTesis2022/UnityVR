@@ -47,10 +47,10 @@ public class GameViewController : MonoBehaviour, ISaveable {
         foreach (AnimalObject item in animalsObjects)
         {
             allAnimals.TryGetValue(item.animal.specie, out List<Animal> currentList);
-            if(currentList != null && !animalNames.Contains(item.animal.name)){
+            if(currentList != null && !animalNames.Contains(item.animal.cientificName)){
                 currentList.Add(item.animal);
                 allAnimals[item.animal.specie] = currentList;
-                animalNames.Add(item.animal.name);
+                animalNames.Add(item.animal.cientificName);
             }
         }
 

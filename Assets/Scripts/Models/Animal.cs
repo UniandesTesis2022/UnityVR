@@ -1,24 +1,27 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 
 [System.Serializable]
 public class Animal : IComparable
 {
-    public string name;
-
-    public enum species{
-        BIRD, BUTTERFLY
+    public enum species
+    {
+        AVE, MARIPOSA
     }
 
-    public species specie;
+    public string commonName;
+    public string cientificName;
+    public string description;
 
+    public species specie;
+    public Sprite mapLocation;
     public Sprite image;
 
-    public Animal(species pSpecie, string pName){
+    public Animal(species pSpecie, string pCientificName, string pCommonName){
         specie = pSpecie;
-        name = pName;
+        cientificName = pCientificName;
+        commonName = pCommonName;
     }
 
     public int CompareTo(object obj) {
@@ -26,7 +29,7 @@ public class Animal : IComparable
 
         Animal otherAnimal = obj as Animal;
         if (otherAnimal != null)
-            return this.name.CompareTo(otherAnimal.name);
+            return this.cientificName.CompareTo(otherAnimal.cientificName);
         else
            throw new ArgumentException("Object is not an Animal");
     }

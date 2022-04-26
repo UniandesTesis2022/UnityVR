@@ -263,8 +263,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Morpho anaxabia
+    commonName: Anaxibia morpho
+    cientificName: Morpho anaxibia
+    description: "Especie de lepid\xF3ptero ditrisio del g\xE9nero Morpho, de la
+      familia Nymphalidae. Es una mariposa grande, llamativa, de vuelo poderoso,
+      lento, ondulante, a baja o media altura, con habituales planeos y bruscos aleteos,
+      generalmente recorriendo senderos en sectores umbr\xEDos y h\xFAmedos de las
+      selvas donde habita."
     specie: 1
+    mapLocation: {fileID: 0}
     image: {fileID: 21300000, guid: c281b2e1a57dc7549923f948e45b0a78, type: 3}
 --- !u!114 &700556069687987196
 MonoBehaviour:
