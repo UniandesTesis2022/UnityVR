@@ -14,6 +14,10 @@ public class CameraUI : MonoBehaviour
 
     private void Start() {
         animator = GetComponent<Animator>();
+        if(animator == null)
+        {
+            Debug.Log("Animator null!");
+        }
         taken.gameObject.SetActive(false);
         original.gameObject.SetActive(false);
 
@@ -45,7 +49,10 @@ public class CameraUI : MonoBehaviour
 
     private void OnDisable()
     {
-        animator.SetBool("focus", false);
+        if(animator != null)
+        {
+            animator.SetBool("focus", false);
+        }
     }
 
     public void ShowPhoto(Texture2D pTaken, Sprite pOriginal)

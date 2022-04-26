@@ -50,24 +50,6 @@ public class ScreenshotHandler : MonoBehaviour {
         return image;
     }
 
-    public static Texture2D capture(Camera camera, int width, int height)
-    {
-        RenderTexture rt = new RenderTexture(width, height, 0);
-
-        RenderTexture.active = camera.targetTexture;
-        camera.RenderDontRestore();
-
-        Texture2D tex = new Texture2D(camera.targetTexture.width, camera.targetTexture.height, TextureFormat.RGB24, false);
-        // ReadPixels looks at the active RenderTexture.
-        tex.ReadPixels(new Rect(0, 0, camera.targetTexture.width, camera.targetTexture.height), 0, 0);
-        tex.Apply();
-
-        RenderTexture.active = original.targetTexture;
-
-        return tex;
-    }
-
-
     IEnumerator Screenshot(Camera camera, string folder, string name, CameraUI cameraUI, Animal pAnimal)
     {
         yield return new WaitForEndOfFrame();
