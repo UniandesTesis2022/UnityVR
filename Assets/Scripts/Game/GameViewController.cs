@@ -12,8 +12,6 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public static GameViewController instance;
 
-    static public float duration;
-
     public bool isPlaying;
 
     private void Awake() {
@@ -49,10 +47,10 @@ public class GameViewController : MonoBehaviour, ISaveable {
         foreach (AnimalObject item in animalsObjects)
         {
             allAnimals.TryGetValue(item.animal.specie, out List<Animal> currentList);
-            if(currentList != null && !animalNames.Contains(item.animal.name)){
+            if(currentList != null && !animalNames.Contains(item.animal.cientificName)){
                 currentList.Add(item.animal);
                 allAnimals[item.animal.specie] = currentList;
-                animalNames.Add(item.animal.name);
+                animalNames.Add(item.animal.cientificName);
             }
         }
 
@@ -133,11 +131,5 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public void LoadFromGameData(GameData pGameData){
         allAnimals = pGameData.ReturnDictionary();
-    }
-
-    public static void SetTime(float pSeconds)
-    {
-        duration = pSeconds;
-        SceneManager.LoadScene("FirstEscenario");
     }
 }

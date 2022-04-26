@@ -325,8 +325,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Bematistes umbra
+    commonName: "Bem\xE1tido nublado"
+    cientificName: Bematistes umbra
+    description: Mariposa de la familia Nymphalidae. Su habitat natural es el bosque
+      y son normalmente diurnas.
     specie: 1
+    mapLocation: {fileID: 0}
     image: {fileID: 21300000, guid: be8fb9b8552057a408bffa3c846dc30b, type: 3}
 --- !u!114 &8252171540750087895
 MonoBehaviour:

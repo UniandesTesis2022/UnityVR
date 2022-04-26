@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 7838877032390737827}
   - component: {fileID: 7840702066138210951}
   m_Layer: 0
-  m_Name: Crow
+  m_Name: Cyanocorax affinis
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -764,9 +764,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Corvus corax
+    commonName: Chara pechinegra
+    cientificName: Cyanocorax affinis
+    description: "Ave paseriforme de la familia Corvidae. Se caracteriza por ser
+      una especie ruidosa y gregaria, aunque discreta y t\xEDmida"
     specie: 0
-    image: {fileID: 21300000, guid: e8242c198e5851843a74afacd24cea19, type: 3}
+    mapLocation: {fileID: 21300000, guid: e8b22b86cbb99dc45b94a388a9809a13, type: 3}
+    image: {fileID: 21300000, guid: ee00d437df6e1bb4eb0bfac4fc371611, type: 3}
 --- !u!114 &7840702066138210951
 MonoBehaviour:
   m_ObjectHideFlags: 0

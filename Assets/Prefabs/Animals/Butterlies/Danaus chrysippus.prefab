@@ -327,8 +327,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Danaus chrysippus
+    commonName: Mariposa tigre
+    cientificName: Danaus chrysippus
+    description: "Especie de lepid\xF3ptero ditrisio de la familia Nymphalidae. Prefiere
+      las zonas \xE1ridas y abiertas, y se encuentra en una gran variedad de h\xE1bitats,
+      como desiertos, monta\xF1as, bosques y jardines"
     specie: 1
+    mapLocation: {fileID: 0}
     image: {fileID: 21300000, guid: c2e2cf1bf6cd2804dab8c11096ebfee7, type: 3}
 --- !u!114 &1254080539908056004
 MonoBehaviour:

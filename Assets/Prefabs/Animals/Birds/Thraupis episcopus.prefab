@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 6954501901952941193}
   - component: {fileID: 6955202136378843565}
   m_Layer: 0
-  m_Name: BirdBlue
+  m_Name: Thraupis episcopus
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,8 +328,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Thraupis episcopus
+    commonName: "Azulejo com\xFAn"
+    cientificName: Thraupis episcopus
+    description: "Ave paseriforme de la familia Thraupidae,  perteneciente al g\xE9nero
+      Thraupis. Es una especie com\xFAn, muy activa y relativamente confiada. Generalmente
+      anda en parejas, pero tambi\xE9n llega a formar grupos no muy numerosos."
     specie: 0
+    mapLocation: {fileID: 21300000, guid: c0a7e7aba05fe7b4ca1dab07299d1058, type: 3}
     image: {fileID: 21300000, guid: 1e3a8597235fcc743ae24c91230cbe63, type: 3}
 --- !u!114 &6955202136378843565
 MonoBehaviour:

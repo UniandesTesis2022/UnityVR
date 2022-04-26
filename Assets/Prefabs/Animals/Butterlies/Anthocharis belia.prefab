@@ -327,8 +327,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    name: Anthocharis belia
+    commonName: "Bandera Espa\xF1ola"
+    cientificName: Anthocharis belia
+    description: "Mariposa de la familia Pieridae. Su vuelo es lento y torpe, coincide
+      con las horas de mayor insolaci\xF3n, soliendo verse posadas en las flores"
     specie: 1
+    mapLocation: {fileID: 0}
     image: {fileID: 21300000, guid: 3cbddac46379dbc41871d4b7851cf800, type: 3}
 --- !u!114 &6759733143348915548
 MonoBehaviour:
