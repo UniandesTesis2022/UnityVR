@@ -49,9 +49,9 @@ public class IngameMenuUI : MonoBehaviour
             if(File.Exists(imagePath)){
                 
                 Sprite actualPhoto = LoadNewSprite(imagePath);
-                btnScript.SetUp(actualPhoto, animal.cientificName);
+                btnScript.SetUp(actualPhoto, animal.commonName);
             }else{
-                btnScript.SetUp(animal.cientificName);
+                btnScript.SetUp(animal.commonName);
             }
         }
     }

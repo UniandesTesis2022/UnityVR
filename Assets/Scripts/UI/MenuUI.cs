@@ -55,7 +55,7 @@ public class MenuUI : MonoBehaviour
     public void GoToMenu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("CameraTest");
+        SceneManager.LoadScene("InitialMenu");
     }
 
     public void FinishGame(int pPictures, int pTotal)

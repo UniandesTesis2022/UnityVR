@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PhotoBtn : MonoBehaviour
 {
     [SerializeField] private Image photo;
 
-    [SerializeField] private Text animalName;
+    [SerializeField] private TextMeshProUGUI animalName;
 
     public void SetUp(Sprite pSprite, string pName){
         photo.sprite = pSprite;

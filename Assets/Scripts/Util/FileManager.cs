@@ -47,7 +47,10 @@ public class FileManager {
         Debug.Log(Application.streamingAssetsPath);
         Debug.Log(pFileContent);
         var fullPath = Path.Combine(Application.streamingAssetsPath, "Gamedata", pFileName);
-
+        if (!Directory.Exists(fullPath))
+        {
+            Directory.CreateDirectory(fullPath);
+        }
         try {
             File.WriteAllText(fullPath, pFileContent);
             return true;

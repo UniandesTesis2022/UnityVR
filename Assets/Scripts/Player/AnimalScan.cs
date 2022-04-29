@@ -14,8 +14,7 @@ public class AnimalScan : MonoBehaviour
     private RaycastHit hit;
     private float CameraRange = 500;
 
-    private Animal currentAnimal;    
-    
+    private Animal currentAnimal;
 
     // Update is called once per frame
     void Update()

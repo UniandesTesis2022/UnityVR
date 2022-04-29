@@ -17,7 +17,8 @@ public class CameraUI : MonoBehaviour
     [SerializeField] private Image original;
     [SerializeField] private Image taken;
     [SerializeField] private float totalSeconds;
-    private float seconds;
+    private float imageSeconds;
+    private float infoSeconds;
 
     private void Start() {
         animator = GetComponent<Animator>();
@@ -28,21 +29,38 @@ public class CameraUI : MonoBehaviour
         taken.gameObject.SetActive(false);
         original.gameObject.SetActive(false);
 
-        seconds = 0;
+        commonName.gameObject.SetActive(false);
+        cientificName.gameObject.SetActive(false);
+        description.gameObject.SetActive(false);
+
+        imageSeconds = 0;
     }
 
     private void Update()
     {
-        if(seconds > 0)
+        if(imageSeconds > 0)
         {
-            seconds -= Time.deltaTime;
+            imageSeconds -= Time.deltaTime;
         }
         else if(taken.gameObject.activeInHierarchy)
         {
-            seconds = 0;
+            imageSeconds = 0;
 
             taken.gameObject.SetActive(false);
             original.gameObject.SetActive(false);
+        }
+
+        if (infoSeconds > 0)
+        {
+            infoSeconds -= Time.deltaTime;
+        }
+        else if (commonName.gameObject.activeInHierarchy)
+        {
+            infoSeconds = 0;
+
+            commonName.gameObject.SetActive(false);
+            cientificName.gameObject.SetActive(false);
+            description.gameObject.SetActive(false);
         }
     }
 
@@ -56,6 +74,8 @@ public class CameraUI : MonoBehaviour
         commonName.gameObject.SetActive(true);
         cientificName.gameObject.SetActive(true);
         description.gameObject.SetActive(true);
+
+        infoSeconds = 10;
     }
 
     public void StopFocus(){
@@ -63,9 +83,6 @@ public class CameraUI : MonoBehaviour
         {
             animator.SetBool("focus", false);
         }
-        commonName.gameObject.SetActive(false);
-        cientificName.gameObject.SetActive(false);
-        description.gameObject.SetActive(false);
     }
 
     private void OnDisable()
@@ -80,6 +97,6 @@ public class CameraUI : MonoBehaviour
 
         taken.gameObject.SetActive(true);
         original.gameObject.SetActive(true);
-        seconds = totalSeconds;
+        imageSeconds = totalSeconds;
     }
 }
