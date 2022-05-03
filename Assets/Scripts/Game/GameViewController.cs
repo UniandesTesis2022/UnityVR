@@ -54,7 +54,7 @@ public class GameViewController : MonoBehaviour, ISaveable {
             }
         }
 
-        SaveGameData();
+        //SaveGameData();
     }
 
     public static List<Animal> GetAnimalsBySpecie(Animal.species pSpecie){

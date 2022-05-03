@@ -12,6 +12,6 @@ public class FinalMenuUI : MonoBehaviour
     internal void SetUp(int pPictures, int pTotal)
     {
         scoreText.text = pPictures + "/" + pTotal;
-        resultText.text = pPictures >= pTotal ? "You won": "You lose";
+        resultText.text = pPictures >= pTotal ? "Ganaste!": "Perdiste :(";
     }
 }

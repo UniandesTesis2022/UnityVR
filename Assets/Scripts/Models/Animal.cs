@@ -7,7 +7,7 @@ public class Animal : IComparable
 {
     public enum species
     {
-        AVE, MARIPOSA
+        AVE, MARIPOSA, INSECTO
     }
 
     public string commonName;
