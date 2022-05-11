@@ -10,7 +10,6 @@ public class Animal : IComparable
         Araneae
     }
 
-    public string commonName;
     public string cientificName;
     public string description;
 
@@ -18,10 +17,9 @@ public class Animal : IComparable
     //public Sprite mapLocation;
     public Sprite image;
 
-    public Animal(Order pOrder, string pCientificName, string pCommonName){
+    public Animal(Order pOrder, string pCientificName){
         animalOrder = pOrder;
         cientificName = pCientificName;
-        commonName = pCommonName;
     }
 
     public int CompareTo(object obj) {
@@ -40,10 +38,8 @@ public class Animal : IComparable
         {
             case Order.Araneae:
                 return "Araña";
-                break;
             default:
-                return "None"
-                break;
+                return "None";
         }
     }
 }

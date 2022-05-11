@@ -233,7 +233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    commonName: 
     cientificName: 
     description: 
     animalOrder: 0
@@ -442,10 +441,10 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 257d1b70c7b126549b68971fa010c239, type: 2}
-  - {fileID: 2100000, guid: 8a68cc97002517544b60ce0b7e3d7b9c, type: 2}
-  - {fileID: 2100000, guid: daeca323c2dbb8e48825dc557a8ef1ee, type: 2}
-  - {fileID: 2100000, guid: ef6fe633c62150c42b096766ac09a02a, type: 2}
+  - {fileID: 2100000, guid: eea4db6df54fb804fb27a3e1952716b8, type: 2}
+  - {fileID: 2100000, guid: dcc23b9184b1c294ea497b9d58f35fba, type: 2}
+  - {fileID: 2100000, guid: ed1c65112d1b636449b3e2b67dc88401, type: 2}
+  - {fileID: 2100000, guid: 7bf3ac2964db0bd4babdd4ba1041f790, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

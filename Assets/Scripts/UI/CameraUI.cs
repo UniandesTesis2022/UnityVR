@@ -9,8 +9,8 @@ public class CameraUI : MonoBehaviour
     private Animator animator;
 
     // Description
-    [SerializeField] private TextMeshProUGUI commonName;
-    [SerializeField] private TextMeshProUGUI cientificName;
+    [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private TextMeshProUGUI orderText;
     [SerializeField] private TextMeshProUGUI description;
 
     // Photos
@@ -29,8 +29,8 @@ public class CameraUI : MonoBehaviour
         taken.gameObject.SetActive(false);
         original.gameObject.SetActive(false);
 
-        commonName.gameObject.SetActive(false);
-        cientificName.gameObject.SetActive(false);
+        nameText.gameObject.SetActive(false);
+        orderText.gameObject.SetActive(false);
         description.gameObject.SetActive(false);
 
         imageSeconds = 0;
@@ -54,12 +54,12 @@ public class CameraUI : MonoBehaviour
         {
             infoSeconds -= Time.deltaTime;
         }
-        else if (commonName.gameObject.activeInHierarchy)
+        else if (nameText.gameObject.activeInHierarchy)
         {
             infoSeconds = 0;
 
-            commonName.gameObject.SetActive(false);
-            cientificName.gameObject.SetActive(false);
+            nameText.gameObject.SetActive(false);
+            orderText.gameObject.SetActive(false);
             description.gameObject.SetActive(false);
         }
     }
@@ -69,12 +69,12 @@ public class CameraUI : MonoBehaviour
         animator.SetBool("oldFocus", pExists);
         animator.SetBool("focus", true);
 
-        commonName.text = pAnimal.commonName;
-        cientificName.text = pAnimal.cientificName;
+        nameText.text = pAnimal.cientificName;
+        orderText.text = Animal.GetOrderCommonName(pAnimal.animalOrder);
         description.text = pAnimal.description;
 
-        commonName.gameObject.SetActive(true);
-        cientificName.gameObject.SetActive(true);
+        nameText.gameObject.SetActive(true);
+        orderText.gameObject.SetActive(true);
         description.gameObject.SetActive(true);
 
         infoSeconds = 10;
