@@ -52,7 +52,7 @@ public class SpiderBehaviour : MonoBehaviour
             {
                 currentTime = 0f;
                 _animator.SetBool(animatorWalking, true);
-                _animator.speed = 2;
+                _animator.speed = speed;
                 _rigidbody.velocity = (objectivePosition - transform.position).normalized * speed;
             }
         }
