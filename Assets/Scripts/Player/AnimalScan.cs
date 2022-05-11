@@ -24,7 +24,7 @@ public class AnimalScan : MonoBehaviour
                 var animal = hit.transform.gameObject.GetComponent<AnimalObject>().animal;
                 if(animal != null){
                     currentAnimal = animal;
-                    cameraUI.StartFocus(currentAnimal, ScreenshotHandler.PhotoExists(currentAnimal.specie.ToString(), currentAnimal.cientificName));
+                    cameraUI.StartFocus(currentAnimal, ScreenshotHandler.PhotoExists(currentAnimal.animalOrder.ToString(), currentAnimal.cientificName));
                 }
             }
             else{
@@ -44,14 +44,14 @@ public class AnimalScan : MonoBehaviour
         if (currentAnimal != null){
             playerSounds.Shoot();
 
-            if (!ScreenshotHandler.PhotoExists(currentAnimal.specie.ToString(), currentAnimal.cientificName))
+            if (!ScreenshotHandler.PhotoExists(currentAnimal.animalOrder.ToString(), currentAnimal.cientificName))
             {
                 if(GameplayManager.instance != null)
                 {
                     GameplayManager.instance.AddPicture();
                 }
             }
-            Texture2D photo = ScreenshotHandler.TakePhoto(cameraPhoto, currentAnimal.specie.ToString(), currentAnimal.cientificName);
+            Texture2D photo = ScreenshotHandler.TakePhoto(cameraPhoto, currentAnimal.animalOrder.ToString(), currentAnimal.cientificName);
             cameraUI.ShowPhoto(photo, currentAnimal.image);
         }
     }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameViewController : MonoBehaviour, ISaveable {
     
-    private Dictionary<Animal.species, List<Animal>> allAnimals;
+    private Dictionary<Animal.Order, List<Animal>> allAnimals;
 
     private List<SaveData.AnimalPhoto> animalPhotos;
 
@@ -35,8 +35,8 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
 
     public void GenerateGameData(){
-        allAnimals = new Dictionary<Animal.species, List<Animal>>();
-        foreach(Animal.species specie in Enum.GetValues(typeof(Animal.species)))
+        allAnimals = new Dictionary<Animal.Order, List<Animal>>();
+        foreach(Animal.Order specie in Enum.GetValues(typeof(Animal.Order)))
         {
             allAnimals.Add(specie, new List<Animal>());
         }
@@ -46,10 +46,10 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
         foreach (AnimalObject item in animalsObjects)
         {
-            allAnimals.TryGetValue(item.animal.specie, out List<Animal> currentList);
+            allAnimals.TryGetValue(item.animal.animalOrder, out List<Animal> currentList);
             if(currentList != null && !animalNames.Contains(item.animal.cientificName)){
                 currentList.Add(item.animal);
-                allAnimals[item.animal.specie] = currentList;
+                allAnimals[item.animal.animalOrder] = currentList;
                 animalNames.Add(item.animal.cientificName);
             }
         }
@@ -57,7 +57,7 @@ public class GameViewController : MonoBehaviour, ISaveable {
         //SaveGameData();
     }
 
-    public static List<Animal> GetAnimalsBySpecie(Animal.species pSpecie){
+    public static List<Animal> GetAnimalsBySpecie(Animal.Order pSpecie){
         
         if(instance != null && instance.allAnimals.TryGetValue(pSpecie, out List<Animal> returnList)){
             return returnList;
@@ -71,7 +71,7 @@ public class GameViewController : MonoBehaviour, ISaveable {
     {
         List<Animal> returnList = new List<Animal>();
 
-        foreach (KeyValuePair<Animal.species, List<Animal>> animalList in instance.allAnimals)
+        foreach (KeyValuePair<Animal.Order, List<Animal>> animalList in instance.allAnimals)
         {
             returnList.AddRange(animalList.Value);
         }

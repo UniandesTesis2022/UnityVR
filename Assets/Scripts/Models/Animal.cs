@@ -5,21 +5,21 @@ using UnityEngine;
 [System.Serializable]
 public class Animal : IComparable
 {
-    public enum species
+    public enum Order
     {
-        AVE, MARIPOSA, INSECTO
+        Araneae
     }
 
     public string commonName;
     public string cientificName;
     public string description;
 
-    public species specie;
-    public Sprite mapLocation;
+    public Order animalOrder;
+    //public Sprite mapLocation;
     public Sprite image;
 
-    public Animal(species pSpecie, string pCientificName, string pCommonName){
-        specie = pSpecie;
+    public Animal(Order pOrder, string pCientificName, string pCommonName){
+        animalOrder = pOrder;
         cientificName = pCientificName;
         commonName = pCommonName;
     }
@@ -32,5 +32,18 @@ public class Animal : IComparable
             return this.cientificName.CompareTo(otherAnimal.cientificName);
         else
            throw new ArgumentException("Object is not an Animal");
+    }
+
+    public static string GetOrderCommonName(Order pOrder)
+    {
+        switch (pOrder)
+        {
+            case Order.Araneae:
+                return "Araña";
+                break;
+            default:
+                return "None"
+                break;
+        }
     }
 }

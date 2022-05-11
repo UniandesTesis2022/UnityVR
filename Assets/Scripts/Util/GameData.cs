@@ -6,15 +6,15 @@ public class GameData{
     [System.Serializable]
     public struct AnimalDict
     {
-        public Animal.species specie;
+        public Animal.Order specie;
         public List<Animal> animals;
     }
 
     public List<AnimalDict> allAnimals;
 
-    public void GetDictionary(Dictionary<Animal.species, List<Animal>> pDict){
+    public void GetDictionary(Dictionary<Animal.Order, List<Animal>> pDict){
         allAnimals = new List<AnimalDict>();
-        foreach(KeyValuePair<Animal.species,List<Animal>> item in pDict)
+        foreach(KeyValuePair<Animal.Order,List<Animal>> item in pDict)
         {
             AnimalDict newItem = new AnimalDict();
             newItem.specie = item.Key;
@@ -23,8 +23,8 @@ public class GameData{
         }
     }
 
-    public Dictionary<Animal.species, List<Animal>> ReturnDictionary(){
-        Dictionary<Animal.species, List<Animal>> newDict = new Dictionary<Animal.species, List<Animal>>();
+    public Dictionary<Animal.Order, List<Animal>> ReturnDictionary(){
+        Dictionary<Animal.Order, List<Animal>> newDict = new Dictionary<Animal.Order, List<Animal>>();
 
         foreach(AnimalDict item in allAnimals)
         {

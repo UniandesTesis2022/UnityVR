@@ -64,7 +64,9 @@ public class CameraUI : MonoBehaviour
         }
     }
 
-    public void StartFocus(Animal pAnimal, bool pExists){
+    public void StartFocus(Animal pAnimal, bool pExists)
+    {
+        animator.SetBool("oldFocus", pExists);
         animator.SetBool("focus", true);
 
         commonName.text = pAnimal.commonName;

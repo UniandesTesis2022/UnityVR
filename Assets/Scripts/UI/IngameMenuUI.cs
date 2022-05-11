@@ -18,15 +18,15 @@ public class IngameMenuUI : MonoBehaviour
     void Start()
     {
         RenderSpecies();
-        RenderPhotos(Animal.species.AVE);
+        RenderPhotos(Animal.Order.Araneae);
     }
     
     private void OnEnable() {
-        RenderPhotos(Animal.species.AVE);
+        RenderPhotos(Animal.Order.Araneae);
     }
 
     private void RenderSpecies(){   
-        foreach(Animal.species specie in Enum.GetValues(typeof(Animal.species)))
+        foreach(Animal.Order specie in Enum.GetValues(typeof(Animal.Order)))
         {
             GameObject newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
             SpeciesBtn btnScript = newObject.GetComponent<SpeciesBtn>();
@@ -34,7 +34,7 @@ public class IngameMenuUI : MonoBehaviour
         }
     }
 
-    public void RenderPhotos(Animal.species name){
+    public void RenderPhotos(Animal.Order name){
         EmptyPanel();
 
         List<Animal> animals = GameViewController.GetAnimalsBySpecie(name);
@@ -43,7 +43,7 @@ public class IngameMenuUI : MonoBehaviour
         {
             GameObject newObject = Instantiate(photoPrefab, photoPanel.position, Quaternion.identity, photoPanel);
             
-            imagePath = Path.Combine(Application.persistentDataPath, "Photos", animal.specie.ToString(), animal.cientificName.Replace(" ", "") + ".jpg");
+            imagePath = Path.Combine(Application.persistentDataPath, "Photos", animal.animalOrder.ToString(), animal.cientificName.Replace(" ", "") + ".jpg");
 
             PhotoBtn btnScript = newObject.GetComponent<PhotoBtn>();
             if(File.Exists(imagePath)){
