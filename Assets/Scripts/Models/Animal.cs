@@ -7,7 +7,7 @@ public class Animal : IComparable
 {
     public enum Order
     {
-        Araneae, Coleoptera, Diptera, Others
+        Araneae, Coleoptera, Diptera, Others, Hymenoptera, Odonata
     }
 
     public string cientificName;
@@ -37,11 +37,15 @@ public class Animal : IComparable
         switch (pOrder)
         {
             case Order.Araneae:
-                return "Araña";
+                return "Araï¿½a";
             case Order.Coleoptera:
                 return "Escarabajo";
             case Order.Diptera:
                 return "Mosca";
+            case Order.Hymenoptera:
+                return "Avispa";
+            case Order.Odonata:
+                return "Libelula";
             default:
                 return "Otros";
         }
