@@ -8,8 +8,8 @@ public class GameplayManager : MonoBehaviour
 {
     public static GameplayManager instance;
 
-    private int total;
-    private int pictures;
+    public int total;
+    public int pictures;
 
     public MenuUI menuUI;
 

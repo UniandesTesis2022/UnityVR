@@ -9,9 +9,9 @@ public class SpeciesBtn : MonoBehaviour
 
     private IngameMenuUI menu;
 
-    private Animal.species specie;
+    private Animal.Order specie;
 
-    public void SetUp(IngameMenuUI pMenu, Animal.species pSpecie){
+    public void SetUp(IngameMenuUI pMenu, Animal.Order pSpecie){
         specie = pSpecie;
         menu = pMenu;
 
