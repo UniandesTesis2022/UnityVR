@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpiderBehaviour : MonoBehaviour
 {
-    private const string animatorWalking = "isWalking";
+    private const string animatorWalking = "isMoving";
 
     [SerializeField] private Transform[] objectivePlaces;
     [SerializeField] private float speed;

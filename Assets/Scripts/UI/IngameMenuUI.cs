@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using TMPro;
 using UnityEngine;
 
 public class IngameMenuUI : MonoBehaviour
@@ -14,6 +15,9 @@ public class IngameMenuUI : MonoBehaviour
 
     [SerializeField] GameObject photoPrefab;
 
+    [SerializeField] TextMeshProUGUI resultText;
+    [SerializeField] TextMeshProUGUI scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,15 +27,23 @@ public class IngameMenuUI : MonoBehaviour
     
     private void OnEnable() {
         RenderPhotos(Animal.Order.Araneae);
+        scoreText.text = GameplayManager.instance.pictures + "/" + GameplayManager.instance.total;
     }
 
-    private void RenderSpecies(){   
-        foreach(Animal.Order specie in Enum.GetValues(typeof(Animal.Order)))
+    private void RenderSpecies(){
+        SpeciesBtn btnScript;
+        GameObject newObject;
+
+        foreach (Animal.Order specie in 
+            new Animal.Order[]{Animal.Order.Araneae, Animal.Order.Coleoptera})
         {
-            GameObject newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
-            SpeciesBtn btnScript = newObject.GetComponent<SpeciesBtn>();
+            newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
+            btnScript = newObject.GetComponent<SpeciesBtn>();
             btnScript.SetUp(this, specie);
         }
+        newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
+        btnScript = newObject.GetComponent<SpeciesBtn>();
+        btnScript.SetUp(this, Animal.Order.Others);
     }
 
     public void RenderPhotos(Animal.Order name){
@@ -62,7 +74,7 @@ public class IngameMenuUI : MonoBehaviour
         Sprite NewSprite = Sprite.Create(SpriteTexture, new Rect(0, 0, SpriteTexture.width, SpriteTexture.height),new Vector2(0,0), PixelsPerUnit);
 
         return NewSprite;
-   }
+    }
 
    public void EmptyPanel(){
         int children = photoPanel.childCount;
@@ -70,5 +82,10 @@ public class IngameMenuUI : MonoBehaviour
             Destroy(photoPanel.GetChild(i).gameObject);
         }
    }
- 
+    public void Finish(int pPictures, int pTotal)
+    {
+        scoreText.text = pPictures + "/" + pTotal;
+        resultText.text = pPictures >= pTotal ? "Ganaste!" : "Perdiste :(";
+    }
+
 }

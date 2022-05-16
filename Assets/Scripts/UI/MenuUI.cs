@@ -9,7 +9,6 @@ public class MenuUI : MonoBehaviour
     [SerializeField] private GameObject initialMenu;
     [SerializeField] private GameObject countdownUI;
     [SerializeField] private GameObject ingameMenu;
-    [SerializeField] private GameObject finalMenu;
 
     [SerializeField] private ButtonMap buttonMap;
     [SerializeField] private GameObject gameplayManager;
@@ -38,7 +37,7 @@ public class MenuUI : MonoBehaviour
     public void StartGame(float pSeconds)
     {
         initialMenu.SetActive(false);
-        SceneManager.LoadScene("FirstEscenario");
+        SceneManager.LoadScene("SecondScenario");
     }
 
     public void ShowIngame()
@@ -62,7 +61,6 @@ public class MenuUI : MonoBehaviour
     {
         buttonMap.DisableInput();
         
-        finalMenu.SetActive(true);
-        finalMenu.GetComponent<FinalMenuUI>().SetUp(pPictures, pTotal);
+        ingameMenu.GetComponent<IngameMenuUI>().Finish(pPictures, pTotal);
     }
 }

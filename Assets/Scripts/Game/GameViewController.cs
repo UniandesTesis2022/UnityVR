@@ -59,12 +59,28 @@ public class GameViewController : MonoBehaviour, ISaveable {
 
     public static List<Animal> GetAnimalsBySpecie(Animal.Order pSpecie){
         
-        if(instance != null && instance.allAnimals.TryGetValue(pSpecie, out List<Animal> returnList)){
-            return returnList;
-        }else{
-            return new List<Animal>();
+        if(instance != null ){
+            if(pSpecie != Animal.Order.Others)
+            {
+                if(instance.allAnimals.TryGetValue(pSpecie, out List<Animal> returnList))
+                {
+                    return returnList;
+                }
+            }
+            else
+            {
+                List<Animal> otherList = new List<Animal>();
+                foreach (var otherSpecie in new Animal.Order[] {Animal.Order.Diptera})
+                {
+                    if (instance.allAnimals.TryGetValue(otherSpecie, out List<Animal> returnList))
+                    {
+                        otherList.AddRange(returnList);
+                    }
+                }
+                return otherList;
+            }
         }
-        
+        return new List<Animal>();
     }
 
     public static List<Animal> GetAllAnimals()
