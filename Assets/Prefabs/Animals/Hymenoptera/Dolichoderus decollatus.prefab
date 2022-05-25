@@ -650,7 +650,7 @@ MonoBehaviour:
   animal:
     cientificName: Dolichoderus decollatus
     description: 
-    animalOrder: 4
+    animalOrder: 3
     image: {fileID: 21300000, guid: bb6086fa1fac473418bcfb08c596a3b2, type: 3}
 --- !u!1 &3132324887147958136
 GameObject:

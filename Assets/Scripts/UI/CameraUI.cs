@@ -11,6 +11,7 @@ public class CameraUI : MonoBehaviour
     // Description
     [SerializeField] private TextMeshProUGUI nameText;
     [SerializeField] private TextMeshProUGUI orderText;
+    [SerializeField] private TextMeshProUGUI cientificOrderText;
     [SerializeField] private TextMeshProUGUI description;
 
     // Photos
@@ -31,6 +32,7 @@ public class CameraUI : MonoBehaviour
 
         nameText.gameObject.SetActive(false);
         orderText.gameObject.SetActive(false);
+        cientificOrderText.gameObject.SetActive(false);
         description.gameObject.SetActive(false);
 
         imageSeconds = 0;
@@ -60,6 +62,7 @@ public class CameraUI : MonoBehaviour
 
             nameText.gameObject.SetActive(false);
             orderText.gameObject.SetActive(false);
+            cientificOrderText.gameObject.SetActive(false);
             description.gameObject.SetActive(false);
         }
     }
@@ -70,11 +73,13 @@ public class CameraUI : MonoBehaviour
         animator.SetBool("focus", true);
 
         nameText.text = pAnimal.cientificName;
-        orderText.text = Animal.GetOrderCommonName(pAnimal.animalOrder);
+        orderText.text = Animal.GetOrderName(pAnimal.animalOrder);
+        cientificOrderText.text = Animal.GetOrderCommonName(pAnimal.animalOrder);
         description.text = pAnimal.description;
 
         nameText.gameObject.SetActive(true);
         orderText.gameObject.SetActive(true);
+        cientificOrderText.gameObject.SetActive(true);
         description.gameObject.SetActive(true);
 
         infoSeconds = 10;

@@ -388,7 +388,7 @@ MonoBehaviour:
   animal:
     cientificName: Cephalotes atratus
     description: 
-    animalOrder: 4
+    animalOrder: 3
     image: {fileID: 21300000, guid: 8920ca832cf45cf419fdd58467415c15, type: 3}
 --- !u!1 &1769716181901287570
 GameObject:

@@ -1923,7 +1923,7 @@ MonoBehaviour:
   animal:
     cientificName: Euglossa cognata
     description: "Habita en Sudam\xE9rica y se destaca por sus colores metalizados"
-    animalOrder: 4
+    animalOrder: 2
     image: {fileID: 21300000, guid: ec5e4a22015feed40beb90f9c9cc5eb6, type: 3}
 --- !u!1 &8593352028632751831
 GameObject:
