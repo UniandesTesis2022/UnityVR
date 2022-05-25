@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AnimalScan">
+    <Position X="5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAAAAAgAAAAAAAACAAAAQABAAAAAAQAAABAA=</HashCode>
+      <FileName>Assets\Scripts\Player\AnimalScan.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="cameraUI" />
+      <Field Name="playerSounds" />
+      <Field Name="currentAnimal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ButtonMap">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <AssociationLine Name="animalScan" Type="AnimalScan" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="5.193" />
+        <Point X="2.765" Y="5.193" />
+        <Point X="2.765" Y="4.625" />
+        <Point X="5" Y="4.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAACAEAABAAAAAAEAAAAAAAAIAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\ButtonMap.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tablet" />
+      <Field Name="animalScan" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerSounds">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAAIIgABAABAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerSounds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TabletManager">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAIAQAABAAAIAAAAAEAEAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\TabletManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScreenshotHandler" Collapsed="true">
+    <Position X="9.25" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAEAAAIAAggAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\Util\ScreenshotHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileManager" Collapsed="true">
+    <Position X="9.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAgAABAAAAAAAAQAAAAAEAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\Util\FileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalObject">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Animal\AnimalObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="animal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Animal">
+    <Position X="5.25" Y="6.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Animal.Order" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Models\Animal.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAQAIAAAAAAAEAAAAAAAAAAAAAAIAgA=</HashCode>
+      <FileName>Assets\Scripts\Models\Animal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GameplayManager">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCEACAAAABCAAAAAEAMAABAAABEAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Gameplay\GameplayManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="instance" />
+      <Field Name="menuUI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MenuUI">
+    <Position X="2.75" Y="0.75" Width="1.5" />
+    <AssociationLine Name="buttonMap" Type="ButtonMap" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.844" Y="3.588" />
+        <Point X="2.844" Y="4.375" />
+        <Point X="2" Y="4.375" />
+        <Point X="2" Y="4.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AACAABBAACAQAABAAAAAAAAgAAAAABABAAAAIAAACBA=</HashCode>
+      <FileName>Assets\Scripts\UI\MenuUI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="initialMenu" />
+      <Field Name="countdownUI" />
+      <Field Name="ingameMenu" />
+      <Field Name="buttonMap" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CameraUI">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BARABAAAACgAAAAAIAAAAAAAQAEAAAAIAEAABAEAAgA=</HashCode>
+      <FileName>Assets\Scripts\UI\CameraUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CountUI" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIACAEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\CountUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IngameMenuUI" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAASQAAAAAIQAAAAAAAAAAAgAQABAAKAg=</HashCode>
+      <FileName>Assets\Scripts\UI\IngameMenuUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InitialMenuUI" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\InitialMenuUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBtn" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Btns\PhotoBtn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpeciesBtn">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAgAAAAAAAgCAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Btns\SpeciesBtn.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menu" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

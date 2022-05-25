@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuUI : MonoBehaviour
 {
-    [SerializeField] private GameObject initialMenu;
-    [SerializeField] private GameObject countdownUI;
-    [SerializeField] private GameObject ingameMenu;
+    [SerializeField] private InitialMenuUI initialMenu;
+    [SerializeField] private CountUI countdownUI;
+    [SerializeField] private IngameMenuUI ingameMenu;
 
     [SerializeField] private ButtonMap buttonMap;
-    [SerializeField] private GameObject gameplayManager;
 
     [SerializeField] GameObject player;
     [SerializeField] Vector3 offset;
@@ -19,13 +18,13 @@ public class MenuUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (GameViewController.instance.isPlaying)
+        if (GameplayManager.instance.isPlaying)
         {
-            countdownUI.SetActive(true);
+            countdownUI.gameObject.SetActive(true);
         }
         else
         {
-            initialMenu.SetActive(true);
+            initialMenu.gameObject.SetActive(true);
         }
     }
 
@@ -36,7 +35,7 @@ public class MenuUI : MonoBehaviour
 
     public void StartGame(float pSeconds)
     {
-        initialMenu.SetActive(false);
+        initialMenu.gameObject.SetActive(false);
         SceneManager.LoadScene("SecondScenario");
     }
 
@@ -44,11 +43,9 @@ public class MenuUI : MonoBehaviour
     {
         buttonMap.AllowInput();
 
-        countdownUI.SetActive(false);
-        ingameMenu.SetActive(true);
+        countdownUI.gameObject.SetActive(false);
+        ingameMenu.gameObject.SetActive(true);
         gameObject.SetActive(false);
-
-        gameplayManager.SetActive(true);
     }
 
     public void GoToMenu()

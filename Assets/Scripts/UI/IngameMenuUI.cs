@@ -49,7 +49,7 @@ public class IngameMenuUI : MonoBehaviour
     public void RenderPhotos(Animal.Order name){
         EmptyPanel();
 
-        List<Animal> animals = GameViewController.GetAnimalsBySpecie(name);
+        List<Animal> animals = GameplayManager.GetAnimalsBySpecie(name);
         string imagePath;
         foreach (Animal animal in animals)
         {

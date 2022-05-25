@@ -1,0 +1,1816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Readme" Collapsed="true">
+    <Position X="45.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAQAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\ImportedAssets\TutorialInfo\Scripts\Readme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarTestDriver" Collapsed="true">
+    <Position X="8.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAEAAAAAAEAAAAAAAAAACAAABAAAAAgAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\AvatarGallery\Scripts\OvrAvatarTestDriver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PoseEditHelper" Collapsed="true">
+    <Position X="41.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\GripPoses\Scripts\PoseEditHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GazeTargetSpawner" Collapsed="true">
+    <Position X="50.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAEAAAABEAAAAAAAAAAAAAAAAAAAAAIEA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\LocalAvatar\Scripts\GazeTargetSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoteLoopbackManager" Collapsed="true">
+    <Position X="47" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACABAAAAAAAAAICAACAAgAADAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\RemoteLoopback\Scripts\RemoteLoopbackManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="P2PManager" Collapsed="true">
+    <Position X="40" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQACgAAAAACEAAACQAAAAAAACgAAEAAIAAQgAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\P2PManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerController" Collapsed="true">
+    <Position X="8.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCQAAABAECAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEI=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemotePlayer" Collapsed="true">
+    <Position X="48.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAAgEACAAgABAAAAAAAABAAABAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\RemotePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoomManager" Collapsed="true">
+    <Position X="50.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAAQAAUQAAkAAAIAAAAAAAQAAAIAAAAAAAQAAUAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\RoomManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SocialPlatformManager" Collapsed="true">
+    <Position X="8.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUUJJFGAATAh4TiWIhCABDhDAgEBmwAgUhAABgBSSFI=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\SocialPlatformManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VoipManager" Collapsed="true">
+    <Position X="50.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAAAAAAAAAAAAgAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\VoipManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GazeTarget" Collapsed="true">
+    <Position X="48.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAACAAAAAAAAAAAACAAAAAAAgAAQAAAAAAEAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\GazeTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AvatarLayer" Collapsed="true">
+    <Position X="48.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AvatarLayerPropertyDrawer" Collapsed="true">
+    <Position X="50.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PacketRecordSettings" Collapsed="true">
+    <Position X="41.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAQIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatar" Collapsed="true">
+    <Position X="45.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>2v4XAO1an3UiDZIMaoBha82IwJkhsKFBTr46kBAtQIE=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarAsset" Collapsed="true">
+    <Position X="3" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarAsset.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarAssetMesh" Collapsed="true">
+    <Position X="0.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAABAAQAAAAAAAABAAQAYAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarAssetMesh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarAssetTexture" Collapsed="true">
+    <Position X="3" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarAssetTexture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarBase" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarBody" Collapsed="true">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarBody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarComponent" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAmAIQkAgIAAQAAUBAAAAAAABQAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarDriver" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAIAKAAAAAAACAAAAAAAAAAAgAAAAAAAAAgCAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarDriver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarHand" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarHand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarLocalDriver" Collapsed="true">
+    <Position X="11" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAEAAAAAAEAAAAAAAAAACAAAAAAABAAAE=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarLocalDriver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarMaterialManager" Collapsed="true">
+    <Position X="47" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEwUSEg0CQOAAggCAAgAQIjlAkAAAIAwAIFEBAEACA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarMaterialManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarPacket" Collapsed="true">
+    <Position X="48.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAACACBAAAAAQAAAAgAAAAAAIAAAAAAUEAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarPacket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryWriterExtensions" Collapsed="true">
+    <Position X="34.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarPacket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryReaderExtensions" Collapsed="true">
+    <Position X="33" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAEAAAAACAABAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarPacket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarRemoteDriver" Collapsed="true">
+    <Position X="13.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAgAQAAAgAAAAIAAAACAAAAAAAIAAAAAAgAAICA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarRemoteDriver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarRenderComponent" Collapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAkAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAAABIA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarRenderComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarAssetMaterial" Collapsed="true">
+    <Position X="5.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarSDKManager" Collapsed="true">
+    <Position X="50.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARVHAADAABAAA1AAQABAAAAFAAAAQIAgQMAEAIAEAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarSettings" Collapsed="true">
+    <Position X="31.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAYAAAAAAAAAg=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarSettingsEditor" Collapsed="true">
+    <Position X="33" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAABAACAAAAAAAAEACAgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSettingsEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarSkinnedMeshRenderComponent" Collapsed="true">
+    <Position X="0.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAQAAAAQAAAAAAAAAAGAAABAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarSkinnedMeshRenderPBSComponent" Collapsed="true">
+    <Position X="3" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarSkinnedMeshPBSV2RenderComponent" Collapsed="true">
+    <Position X="5.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAAAQAAEAQBIAAAAAQAAAAQBhBgAAAAAgA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderPBSV2Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarTextureCopyManager" Collapsed="true">
+    <Position X="34.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAEAAgAAABIUBQAAAABEQAigAAAAgwBAhAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarTextureCopyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OvrAvatarTouchController" Collapsed="true">
+    <Position X="0.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarTouchController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DebugUIBuilder" Collapsed="true">
+    <Position X="47" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAICCAQIAQEgggUAAEyYQDwJBGIAACAiIFAIAEAFg=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\DebugUIBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandedInputSelector" Collapsed="true">
+    <Position X="38.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAAAAAIAAI=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\HandedInputSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LaserPointer" Collapsed="true">
+    <Position X="47" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAEBAAACACAAAAIAIAAAIAAIBAABJBAIAQAAABAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\LaserPointer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterCameraConstraint" Collapsed="true">
+    <Position X="31.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAAKIAAgAAAAAEAAAACAAAADAAAAAAIIAAAwAAAACEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\CharacterCameraConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LocomotionController" Collapsed="true">
+    <Position X="48.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAgAQAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LocomotionTeleport" Collapsed="true">
+    <Position X="31.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sgAAACAJAImIQ4VBogIAUCQERhAAAxALAAEINAAtKEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionTeleport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimpleCapsuleWithStickMovement" Collapsed="true">
+    <Position X="41.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABEAAABiABAAABAABAAAABAAAAAIAAAAgRACAACEg=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportAimHandler" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportAimHandlerLaser" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportAimHandlerParabolic" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAICAAAQAAAgAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerParabolic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportAimVisualLaser" Collapsed="true">
+    <Position X="19.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAIAAAICAAAAAAAQAkQAAAAABAAAAAAAAgAAAEE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimVisualLaser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportDestination" Collapsed="true">
+    <Position X="33" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAEAEAAYIAAgAAAARBAQAIAIAAACAACAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportDestination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportInputHandler" Collapsed="true">
+    <Position X="22" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAQAAAAAAAAgACAAAAAAAAAAAEAgAgAAE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportInputHandlerHMD" Collapsed="true">
+    <Position X="22" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAIAAAAAQIAAAAAAAAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerHMD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportInputHandlerTouch" Collapsed="true">
+    <Position X="22" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACEAQAAgAAAAIACAAAAAAAAACAAGAIAAAAE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerTouch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportOrientationHandler" Collapsed="true">
+    <Position X="26.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAUAAAAAIAAAAAAAgAAAQAAAAAASAAAAAAAgAAAAE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportOrientationHandler360" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandler360.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportOrientationHandlerHMD" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQCAAEAAAAAAAAAAASACAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandlerHMD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportOrientationHandlerThumbstick" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAEIAAAAAAAAAAAACAAAACARAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportOrientationHandlerThumbstick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportPoint" Collapsed="true">
+    <Position X="34.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQQAAAAACAAAQAAQAAAAAAAAAAAAQAAACAAACAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportSupport" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAABAAAIAAAAAiAACAE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTargetHandler" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAAAAAAAiAAAAAAAABAACAEAAAAAgAAAgAgAAAAE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTargetHandlerNavMesh" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAACAAAAAAAAEAAAAAAAAAAAAAAgAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNavMesh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTargetHandlerNode" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAgQAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTargetHandlerPhysical" Collapsed="true">
+    <Position X="6.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTargetHandlerPhysical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTransition" Collapsed="true">
+    <Position X="15.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTransitionBlink" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAACAAAAEAAAAAAAAAAAAAAAAQBAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionBlink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTransitionInstant" Collapsed="true">
+    <Position X="15.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionInstant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportTransitionWarp" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQCAAAAEAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionWarp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NativeVideoPlayer" Collapsed="true">
+    <Position X="40" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAiBAgAAQQSgCAhAAAgEIACCAYGTAACoAAIAMAJEBE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\NativeVideoPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonDownListener" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Video\Scripts\ButtonDownListener.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MediaPlayerImage" Collapsed="true">
+    <Position X="33" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAABAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Video\Scripts\MediaPlayerImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoviePlayerSample" Collapsed="true">
+    <Position X="36.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQkEAAMASACAAQBAIAgABACAAQBAAAAoADAAQBIAFQ=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoviePlayerSampleControls" Collapsed="true">
+    <Position X="38.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQQAAAlACIIEBACCAIBCADQABAAAAAAAEAgIQIAAQA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Video\Scripts\MoviePlayerSampleControls.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorUtil" Collapsed="true">
+    <Position X="48.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\Video\Scripts\VectorUtil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AppDeeplinkUI" Collapsed="true">
+    <Position X="45.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAACAAIAQAFAAAAAgAAQAAAAAIAABAAEAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\AppDeeplink\AppDeeplinkUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomDebugUI" Collapsed="true">
+    <Position X="45.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAACAAAAAAAAAAAIAAAABAAAAAAAABAAAAAGA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\AppDeeplink\UI\CustomDebugUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DebugUISample" Collapsed="true">
+    <Position X="48.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAAACACAAAABAAQAAAACAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\DebugUI\DebugUISample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnalyticsUI" Collapsed="true">
+    <Position X="31.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SampleUI" Collapsed="true">
+    <Position X="31.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAKAAAAAIBAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Firebase\SampleUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StartCrashlytics" Collapsed="true">
+    <Position X="48.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Firebase\StartCrashlytics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandsActiveChecker" Collapsed="true">
+    <Position X="45.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAgQEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\HandsActiveChecker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CharacterCapsule" Collapsed="true">
+    <Position X="33" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAACAAEAAACAAAAAMAAAAAAAAAAhgCAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Locomotion\Scripts\CharacterCapsule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LocomotionSampleSupport" Collapsed="true">
+    <Position X="50.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAAjAQggAADAAAAAAQCAgACAABAMAQAQAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Locomotion\Scripts\LocomotionSampleSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OVROverlayCanvas" Collapsed="true">
+    <Position X="36.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBEAAEgCAAAYKARAAAAFAAAAAEACAMAAACAKAAiAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Scripts\OVROverlayCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AugmentedObject" Collapsed="true">
+    <Position X="47" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAACAQAAAAAABAAAAAAAQAAAAAAAAAABABAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\AugmentedObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BrushController" Collapsed="true">
+    <Position X="40" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAAiAABAAAAgAAAAAAAAAAAAAAIABAABAAEAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\BrushController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnableUnpremultipliedAlpha" Collapsed="true">
+    <Position X="34.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\EnableUnpremultipliedAlpha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Flashlight" Collapsed="true">
+    <Position X="40" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAABAAAAAIAACAAAAAAABAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\Flashlight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlashlightController" Collapsed="true">
+    <Position X="41.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAAAoCERQAACAAAAIBAAAAAAAAhAAAAAABBABAI=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\FlashlightController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GrabObject" Collapsed="true">
+    <Position X="34.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAEAAIAAQAAAIgAAAAAAAAAAAACggFAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\GrabObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandMeshMask" Collapsed="true">
+    <Position X="40" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQIAAAAAAAoBAAAAJAEgggCAQABACKABAAAAAAIAkA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\HandMeshMask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HandMeshUI" Collapsed="true">
+    <Position X="41.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAECAIYAAQAIAAAEAIAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\HandMeshUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectManipulator" Collapsed="true">
+    <Position X="41.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQCAASQADoBKgEEAAACEgACAQgAACBAAAAABCEAIAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\ObjectManipulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OverlayPassthrough" Collapsed="true">
+    <Position X="43.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\OverlayPassthrough.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PassthroughBrush" Collapsed="true">
+    <Position X="45.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAQMAAAAAwAAAQAAIAAAAQQAAAAIUAAACACAAIA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughBrush.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PassthroughController" Collapsed="true">
+    <Position X="47" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PassthroughProjectionSurface" Collapsed="true">
+    <Position X="48.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAACAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughProjectionSurface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PassthroughStyler" Collapsed="true">
+    <Position X="50.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwYEEAAgSgAAQBAgCIEAAAEQQQACCECAAQEABAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughStyler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PassthroughSurface" Collapsed="true">
+    <Position X="31.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughSurface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneSampler" Collapsed="true">
+    <Position X="34.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SceneSampler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SelectivePassthroughExperience" Collapsed="true">
+    <Position X="40" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SPPquad" Collapsed="true">
+    <Position X="47" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAAACAAAAAAAAAAAAAAAAQAAAAAAAAAABAAAQA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SPPquad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Anchor" Collapsed="true">
+    <Position X="33" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CJQUAACIRCAAAaAgAAAAgIQTAAACAAAAgAQIQAABIFA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\Anchor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnchorHelpers" Collapsed="true">
+    <Position X="34.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFAAAgAAAAAAAAAAABAAAAAAAAAAABABAAAAAAg=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnchorSession" Collapsed="true">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgQAAAAAAAAAAAABAAEAAABgSIAAAQAAIAAAAAGA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnchorSpawner" Collapsed="true">
+    <Position X="36.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAgAQAACAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnchorUIManager" Collapsed="true">
+    <Position X="38.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAMABCAABGCgoAUAAJQAAAAIGEAAYEUAAMABiEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorUIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpatialAnchorSession" Collapsed="true">
+    <Position X="5.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgAAAACCAQACAAAAIMACAABAQAQAIIAAAAAAAECE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\SpatialAnchorSession.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StartMenu" Collapsed="true">
+    <Position X="50.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAQACBAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\StartScene\Scripts\StartMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimalObject" Collapsed="true">
+    <Position X="41.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Animal\AnimalObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpiderBehaviour" Collapsed="true">
+    <Position X="45.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAABQgASAAAIAAAAAAAAAAAAAAAQCAIAAAACAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Animal\SpiderBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BirdBehaviour" Collapsed="true">
+    <Position X="36.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAABCAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Animal\Test\BirdBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButterflyBehaviour" Collapsed="true">
+    <Position X="41.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAAIBCAAAAAAAAAAAACAAAAIAQAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\Animal\Test\ButterflyBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LadybugBehaviour" Collapsed="true">
+    <Position X="45.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAABCAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Animal\Test\LadybugBehaviour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameViewController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAggCAAAAAAAACAgAAAgAIAABAQABGABAAAAAQAEE=</HashCode>
+      <FileName>Assets\Scripts\Game\GameViewController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="GameplayManager" Collapsed="true">
+    <Position X="45.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAABAAAAAAEAEAABAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Gameplay\GameplayManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Animal" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Animal.Order" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Models\Animal.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAQAIAAAAAAAEAAAAAAAAAAAAAAIAgA=</HashCode>
+      <FileName>Assets\Scripts\Models\Animal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AnimalScan" Collapsed="true">
+    <Position X="43.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAAAAAgAAAAAAAACAAAAQABAAAAAAQAAABAA=</HashCode>
+      <FileName>Assets\Scripts\Player\AnimalScan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonMap" Collapsed="true">
+    <Position X="45.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAACAEAABAAAAAAEAAAAAAAAIAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\ButtonMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerSounds" Collapsed="true">
+    <Position X="38.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAAIIgABAABAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerSounds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TabletManager" Collapsed="true">
+    <Position X="31.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAIAQAABAAAIAAAAAEAEAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\TabletManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhotoBtn" Collapsed="true">
+    <Position X="34.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Btns\PhotoBtn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpeciesBtn" Collapsed="true">
+    <Position X="43.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAgAAAAAAAgCAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Btns\SpeciesBtn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraUI" Collapsed="true">
+    <Position X="48.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BARABAAAACgAAAAAIAAAAAAAQAEAAAAIAEAABAEAAgA=</HashCode>
+      <FileName>Assets\Scripts\UI\CameraUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CountUI" Collapsed="true">
+    <Position X="41.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIACAEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\CountUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IngameMenuUI" Collapsed="true">
+    <Position X="48.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAASQAAAAAIQAAAAAAAAAAAgAQABAAKAg=</HashCode>
+      <FileName>Assets\Scripts\UI\IngameMenuUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InitialMenuUI" Collapsed="true">
+    <Position X="50.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\InitialMenuUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuUI" Collapsed="true">
+    <Position X="34.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAABBAACAQAABAAAAAAAAgAAAEABABAAAAIAAACBA=</HashCode>
+      <FileName>Assets\Scripts\UI\MenuUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileManager" Collapsed="true">
+    <Position X="36.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAgAABAAAAAAAAQAAAAAEAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\Util\FileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameData" Collapsed="true">
+    <Position X="43.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAEAAAAAAAAEACAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Util\GameData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveData" Collapsed="true">
+    <Position X="33" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAQAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Util\SaveData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScreenshotHandler" Collapsed="true">
+    <Position X="36.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAACABAEAAAIAAkgAAAAEg=</HashCode>
+      <FileName>Assets\Scripts\Util\ScreenshotHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Avatar.AvatarLogger" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAgAAAAAAAAAAAAIAgAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarLogger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Avatar.CAPI" Collapsed="true">
+    <Position X="50.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hDnaz+GBZCeMk5Ks5zEo4xMGQAd0HoSIkossz2ykVWY=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OVRTouchSample.Hand" Collapsed="true">
+    <Position X="36.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUJIQBAACIAAAIAACAAIABgBmBAAiAAQQAAgVAATeA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\CustomHands\Scripts\Hand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OVRTouchSample.HandPose" Collapsed="true">
+    <Position X="43.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAACAAAAAAAAAAAAAAIgAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\CustomHands\Scripts\HandPose.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OVRTouchSample.TouchController" Collapsed="true">
+    <Position X="40" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAQAAAAAAAAIAAAAAAAAABAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\TouchControllers\TouchController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.ColorGrabbable" Collapsed="true">
+    <Position X="38.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAQAAAAAAAAAAAAAAAAACEAAAMAAAAgACAgAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\ColorGrabbable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.DistanceGrabbable" Collapsed="true">
+    <Position X="50.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAQAAAAADQAAAAAAIABAAAAAAAAAAAAAAAAAQAIEAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\DistanceGrabbable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.DistanceGrabber" Collapsed="true">
+    <Position X="31.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAQCIAAAAAABASNBAACABBAwRwABAAAAAEAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\DistanceGrabber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.GrabbableCrosshair" Collapsed="true">
+    <Position X="31.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAACABAAAAAAAAAAAEAEAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabbableCrosshair.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.GrabManager" Collapsed="true">
+    <Position X="33" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAgAAAAAAAKgAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.PauseOnInputLoss" Collapsed="true">
+    <Position X="33" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAABAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\PauseOnInputLoss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.BoneCapsuleTriggerLogic" Collapsed="true">
+    <Position X="38.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAACAAAAAAAQIAIQAAACEAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.ButtonController" Collapsed="true">
+    <Position X="13.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAAgkAQCAIEAAEAAABAEEAQAAAAgCQIAIAAQiAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.ButtonTriggerZone" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAABAAAAAAAQCAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonTriggerZone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OculusSampleFramework.ColliderZoneArgs" Collapsed="true">
+    <Position X="34.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAEAAAQAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ColliderZone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.HandsManager" Collapsed="true">
+    <Position X="47" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIxQOBgACAICAAYBAAAAABCAABQIBAAIcAAABIIQBEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\HandsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.Interactable" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAQQAAAQAAAgAEAAAAAEACAAAAgAAAAAAgRAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.InteractableStateArgs" Collapsed="true">
+    <Position X="38.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.InteractableRegistry" Collapsed="true">
+    <Position X="36.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAQAAAABAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableRegistry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.InteractableToolsCreator" Collapsed="true">
+    <Position X="40" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAQAAAFAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.InteractableToolsInputRouter" Collapsed="true">
+    <Position X="41.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQMAAAAgAAAEAAAEAAAAAAAAAAACAAAQBgAAAABABA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsInputRouter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.FingerTipPokeTool" Collapsed="true">
+    <Position X="0.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAQCAAQBZAAAKEoiCAACAAAAAAAAAAQgAQAGAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.FingerTipPokeToolView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAACAEAAAAIAAAAAAAABAAABAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeToolView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OculusSampleFramework.InteractableCollisionInfo" Collapsed="true">
+    <Position X="34.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAABAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.InteractableTool" Collapsed="true">
+    <Position X="1.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEIAAAAACAAAIRACAAAICAgACAAAAEAIABAAQEQkEAE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.PinchStateModule" Collapsed="true">
+    <Position X="36.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAABAAAAIAQAAAAAAAAAAAAAAAAAAARAAACAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\PinchStateModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.RayTool" Collapsed="true">
+    <Position X="2.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCYBQAAACCAEQTAAABAICAAAqAAQAACBAIAAAAwEFEQ=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.RayToolView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAACAAAAAAIAAAQAAAAJAAABAAAAgACBgAAAEo=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayToolView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OculusSampleFramework.DistanceGrabberSample" Collapsed="true">
+    <Position X="33" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICAAAAAACAAAhAgAAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\DistanceGrab\Scripts\DistanceGrabberSample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.ControllerBoxController" Collapsed="true">
+    <Position X="40" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAwAAAAAAgACAAAAAAAABAAAAgAAAACBAAAAMA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\ControllerBoxController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.CowController" Collapsed="true">
+    <Position X="43.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAACAAAEAAAACAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\CowController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.PanelHMDFollower" Collapsed="true">
+    <Position X="43.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAACAAAAAAAAAAAAAAQIBAAAAAAAAQBBEAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\PanelHMDFollower.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.SelectionCylinder" Collapsed="true">
+    <Position X="38.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAIAAAAAAAAAAgACAAABABAACAAABAgAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\SelectionCylinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.TrackSegment" Collapsed="true">
+    <Position X="41.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQIAAAUAgAAAIACAABQgAACgAAiAAAIAQJABAIEgGA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.TrainButtonVisualController" Collapsed="true">
+    <Position X="43.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABJABBACAAGAAAAQAIAEAkAEBABAAAIAAAEAJgAGOA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainButtonVisualController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.TrainCar" Collapsed="true">
+    <Position X="8.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAACUA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.TrainCarBase" Collapsed="true">
+    <Position X="9.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACIAAAIEAAQCYAAAMABAAADAAIAAAEE=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCarBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.TrainCrossingController" Collapsed="true">
+    <Position X="45.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAShAAAAIIAAAAIAAAAAEAAQBCABAAAAACAAAABggEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCrossingController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.TrainLocomotive" Collapsed="true">
+    <Position X="10.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQEAEAkKCAkBDwAKAAAAQAAoCEIEgSEQQASQGAAYKA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainLocomotive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.TrainTrack" Collapsed="true">
+    <Position X="47" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIAAAAEAQAAAAABAAAAAAAAACAAAAAAAACAhgAAQEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainTrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.Pose" Collapsed="true">
+    <Position X="40" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\Utils\Pose.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.WindmillBladesController" Collapsed="true">
+    <Position X="31.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQQCQAAAACAAAABAgBAAEAgAIAAAAAEAAAAAAAEEIAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillBladesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.WindmillController" Collapsed="true">
+    <Position X="33" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAIAAAAgAAAAAAAAAAAAAAAAICSAAAAAACEA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OculusSampleFramework.OVROverlaySample" Collapsed="true">
+    <Position X="38.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBRJAQAABCIMIAAIBiQAAAgABAAREAqgAEAAREghAGA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\OVROverlay\Scripts\OVROverlaySample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Voice.Demo.BuiltInDemo.TimerController" Collapsed="true">
+    <Position X="36.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIEAChAAAAgAAAAgYAAAhAAgAAgAAAAAFAFAA=</HashCode>
+      <FileName>Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Voice.Demo.BuiltInDemo.TimerDisplay" Collapsed="true">
+    <Position X="38.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerDisplay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Voice.Demo.BuiltInDemo.WitActivation" Collapsed="true">
+    <Position X="34.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAICAAAAAAAAEAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\WitActivation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Voice.Demo.UIShapesDemo.InteractionHandler" Collapsed="true">
+    <Position X="43.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQQAAAAAAAiAgAAAQEAIAAAAAAAAAAAIAAAACAAACAA=</HashCode>
+      <FileName>Assets\Oculus\Voice\Demo\Scripts\InteractionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Voice.Demo.UIShapesDemo.ColorChanger" Collapsed="true">
+    <Position X="36.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\ColorChanger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Voice.Demo.UIShapesDemo.Instructions" Collapsed="true">
+    <Position X="33" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAACQAAAAAAAAEAAAAAAAAAAAAAAAAACAABCAQ=</HashCode>
+      <FileName>Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\Instructions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oculus.Voice.Demo.UIShapesDemo.InstructionManagerEditor" Collapsed="true">
+    <Position X="31.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAIAAAAAACAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\Instructions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ovrAvatarMessage_AvatarSpecification" Collapsed="true">
+    <Position X="40" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarMessage_AssetLoaded" Collapsed="true">
+    <Position X="38.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarMeshVertex" Collapsed="true">
+    <Position X="34.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAQAAAAAAAACAIAAAAAAAAACAAAQRJgAQAAABA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarMeshVertexV2" Collapsed="true">
+    <Position X="36.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAQAAAAAAAACAIAAAAAAAAACAAoQRJhAQAAABA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarBlendVertex" Collapsed="true">
+    <Position X="36.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAQBBgAQAAABA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarMeshAssetData" Collapsed="true">
+    <Position X="31.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAQAAAAAAABAAAAEAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarMeshAssetDataV2" Collapsed="true">
+    <Position X="33" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAQAAAAAAABAAAAEAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarTextureAssetData" Collapsed="true">
+    <Position X="31.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAACAAAAgAAAAAAEACAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarTransform" Collapsed="true">
+    <Position X="33" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarHandInputState" Collapsed="true">
+    <Position X="40" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAEAAAAAAAAgABAAAAAEAABAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarComponent" Collapsed="true">
+    <Position X="41.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACEAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarComponent_Offsets" Collapsed="true">
+    <Position X="43.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACEAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarBaseComponent" Collapsed="true">
+    <Position X="31.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABBAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarBodyComponent" Collapsed="true">
+    <Position X="38.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAABAAAAEAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarBodyComponent_Offsets" Collapsed="true">
+    <Position X="40" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAABAAAAEAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarControllerComponent" Collapsed="true">
+    <Position X="45.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarHandComponent" Collapsed="true">
+    <Position X="38.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarMaterialLayerState" Collapsed="true">
+    <Position X="48.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAgAAABAAQIAAAAgAAIAAAAABAgIIAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarMaterialState" Collapsed="true">
+    <Position X="50.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIAAAAAgAIAAAIwAAAAQAEBEABIIgQAIAABAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarExpressiveParameters" Collapsed="true">
+    <Position X="50.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAIAAAAiAAiAAAAAAQAAJAAAAEAAAABEAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarPBSMaterialState" Collapsed="true">
+    <Position X="41.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIEQAAAAAIAAAAgAAAIJQAAACAEIAIAAIAIAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarSkinnedMeshPose" Collapsed="true">
+    <Position X="50.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAEAAAAAAAAQAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarRenderPart_SkinnedMeshRender" Collapsed="true">
+    <Position X="45.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAABRAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarRenderPart_SkinnedMeshRenderPBS" Collapsed="true">
+    <Position X="47" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAABQAAAAAAAAKAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarRenderPart_ProjectorRender" Collapsed="true">
+    <Position X="43.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAACAAAAAAAAAAAACBAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarRenderPart_SkinnedMeshRenderPBS_V2" Collapsed="true">
+    <Position X="48.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAABRAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarBlendShapeParams" Collapsed="true">
+    <Position X="33" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarBlendShapeParams_Offsets" Collapsed="true">
+    <Position X="34.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarVisemes" Collapsed="true">
+    <Position X="34.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarVisemes_Offsets" Collapsed="true">
+    <Position X="36.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarGazeTarget" Collapsed="true">
+    <Position X="31.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarGazeTarget_Offsets" Collapsed="true">
+    <Position X="33" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarGazeTargets" Collapsed="true">
+    <Position X="34.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarGazeTargets_Offsets" Collapsed="true">
+    <Position X="36.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarLight" Collapsed="true">
+    <Position X="41.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAICIAAAAAAAAAAAAAAAAAAABCAAAAEAAAAAAAgA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarLight_Offsets" Collapsed="true">
+    <Position X="43.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAICIAAAAAAAAAAAAAAAAAAABCAAAAEAAAAAAAgA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarLights" Collapsed="true">
+    <Position X="45.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAACAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarLights_Offsets" Collapsed="true">
+    <Position X="47" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAACAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarDebugLine" Collapsed="true">
+    <Position X="47" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAAAAAAEAAAAAAAAAAAACIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ovrAvatarDebugTransform" Collapsed="true">
+    <Position X="48.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="ISaveable" Collapsed="true">
+    <Position X="34.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAQAAE=</HashCode>
+      <FileName>Assets\Scripts\Util\SaveData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OculusSampleFramework.ColliderZone" Collapsed="true">
+    <Position X="31.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQCAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ColliderZone.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OculusSampleFramework.InteractableToolView" Collapsed="true">
+    <Position X="33" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAIAAAAAAAABAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableToolView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ovrAvatarCapabilities" Collapsed="true">
+    <Position X="48.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAABAAAAAAAAAAAAgIAAABAAQAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarMessageType" Collapsed="true">
+    <Position X="47" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarAssetType" Collapsed="true">
+    <Position X="43.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAEAAAQAAAAEAAAAAQIAAAAwAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarTextureFormat" Collapsed="true">
+    <Position X="50.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAACAAAACAAAAQAAAAAAAAAAAAAAAAAAIg=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarRenderPartType" Collapsed="true">
+    <Position X="48.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAARACAAAEAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarLogLevel" Collapsed="true">
+    <Position X="38.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKAAAYAAAAAAIAAAAAAAAAEAAAAAAEAEABA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarButton" Collapsed="true">
+    <Position X="47" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAAAIA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarTouch" Collapsed="true">
+    <Position X="31.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAASAAAAAAAAQAAACAAAAAAAAAAAAAAAkAAAAAAIA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarMaterialLayerBlendMode" Collapsed="true">
+    <Position X="41.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarMaterialLayerSampleMode" Collapsed="true">
+    <Position X="43.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAAIAgAAAAgA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarMaterialMaskType" Collapsed="true">
+    <Position X="45.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAQAAAAAgAIAAAAAAAEAAAI=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarControllerType" Collapsed="true">
+    <Position X="50.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAgAQAEAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarAssetLevelOfDetail" Collapsed="true">
+    <Position X="41.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAQEAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarLookAndFeelVersion" Collapsed="true">
+    <Position X="40" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAJA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarVisibilityFlags" Collapsed="true">
+    <Position X="33" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarHandGesture" Collapsed="true">
+    <Position X="34.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAIAQAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarBodyPartType" Collapsed="true">
+    <Position X="45.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAQAABAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarGazeTargetType" Collapsed="true">
+    <Position X="33" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAIgAAAAAAQAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarLightType" Collapsed="true">
+    <Position X="36.5" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAACAAAAQAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ovrAvatarDebugContext" Collapsed="true">
+    <Position X="31.25" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OVRTouchSample.HandPoseId" Collapsed="true">
+    <Position X="33" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAYAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\CustomHands\Scripts\HandPose.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OculusSampleFramework.InteractionType" Collapsed="true">
+    <Position X="40" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAQIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ColliderZone.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OculusSampleFramework.InteractableCollisionDepth" Collapsed="true">
+    <Position X="34.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAQAAAEAAAQ=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OculusSampleFramework.InteractableState" Collapsed="true">
+    <Position X="36.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAACAAAIAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Interactable.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OculusSampleFramework.InteractableToolTags" Collapsed="true">
+    <Position X="38.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAEAAAAAIAAAAEAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableTool.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OculusSampleFramework.ToolInputState" Collapsed="true">
+    <Position X="34.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableTool.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OculusSampleFramework.EUiDisplayType" Collapsed="true">
+    <Position X="31.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAEAAAEAAAA=</HashCode>
+      <FileName>Assets\Oculus\SampleFramework\Usage\OVROverlay\Scripts\OVROverlaySample.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="specificationCallback" Collapsed="true">
+    <Position X="34.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="assetLoadedCallback" Collapsed="true">
+    <Position X="31.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="combinedMeshLoadedCallback" Collapsed="true">
+    <Position X="33" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Oculus\Avatar\Scripts\OvrAvatarSDKManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

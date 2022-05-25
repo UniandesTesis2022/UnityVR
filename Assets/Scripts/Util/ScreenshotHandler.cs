@@ -3,35 +3,22 @@ using System.IO;
 using System.Collections;
 using UnityEngine;
 
-public class ScreenshotHandler : MonoBehaviour {
-
-    private static ScreenshotHandler instance;
-
-    [SerializeField] GameObject uiPlayer;
+public class ScreenshotHandler {
 
     //Save path
     public static string savePath = "Photos";
 
-    private void Awake() {
-        instance = this;
-    }
-
     public static Texture2D TakePhoto(Camera camera, string folder, string name)
-    {
-        return instance.CaptureSavePhoto(camera, folder, name);
-    }
-
-    public static void DeletePhotos()
-    {
-        FileManager.DeleteFilesInFolder(savePath);
-    }
-
-    public Texture2D CaptureSavePhoto(Camera camera, string folder, string name)
     {
         Texture2D photo = capture(camera);
         FileManager.WriteToFile(Path.Combine(savePath, folder), name.Replace(" ", ""), photo);
         //StartCoroutine(Screenshot(camera, folder, name, cameraUI, pAnimal));
         return photo;
+    }
+
+    public static void DeletePhotos()
+    {
+        FileManager.DeleteFilesInFolder(savePath);
     }
 
     public static Texture2D capture(Camera camera) {
