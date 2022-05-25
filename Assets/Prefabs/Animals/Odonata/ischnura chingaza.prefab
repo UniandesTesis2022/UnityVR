@@ -142,11 +142,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa7ac0785c76b4842b0399e4259d78c6, type: 2}
-  - {fileID: 2100000, guid: 9abdd633229464544b0377fa5ffbb43f, type: 2}
-  - {fileID: 2100000, guid: cbfe00fb6cfcca849b2661e459e979b1, type: 2}
-  - {fileID: 2100000, guid: c8fcd1e3a1ff6804a93956655f50c646, type: 2}
-  - {fileID: 2100000, guid: 1b37f27703697b047a22b32607d5a9d7, type: 2}
+  - {fileID: 2100000, guid: 452d4dc8e3c22c74ba9cbf8fa3f2b37b, type: 2}
+  - {fileID: 2100000, guid: cc9b309e85d18f240967d55b90f602cb, type: 2}
+  - {fileID: 2100000, guid: 7fd3ad4bf112b7540a84fb8b80da474f, type: 2}
+  - {fileID: 2100000, guid: 89278a40811d7744fbe7c669f0998b17, type: 2}
+  - {fileID: 2100000, guid: fd513310451d0474da219279b02500db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -750,10 +750,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4254368128513006752}
   - component: {fileID: 4359541857778043701}
-  - component: {fileID: 3477163643310867992}
+  - component: {fileID: 418405131371742469}
   - component: {fileID: 3477163643310867995}
   m_Layer: 6
-  m_Name: ischnura chingaza
+  m_Name: Ischnura chingaza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -768,7 +768,7 @@ Transform:
   m_GameObject: {fileID: 3477163643310867994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children:
   - {fileID: 4955903427313381438}
   - {fileID: 2348393130577095861}
@@ -794,8 +794,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!135 &3477163643310867992
-SphereCollider:
+--- !u!136 &418405131371742469
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -804,9 +804,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4
-  m_Center: {x: 0, y: 0, z: -3.5}
+  m_Radius: 3.5
+  m_Height: 10
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.7, z: -1}
 --- !u!114 &3477163643310867995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -820,10 +821,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    cientificName: Mecistogaster linearis
+    cientificName: Ischnura chingaza
     description: 
-    animalOrder: 4
-    image: {fileID: 21300000, guid: 6a44b0dd27b107949bd623ec1788af8e, type: 3}
+    animalOrder: 5
+    image: {fileID: 21300000, guid: c8c7e248abbe093469ad03b07a54992c, type: 3}
 --- !u!1 &3505755583847484894
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3530961022212819726}
   m_LocalRotation: {x: 3.5692063e-17, y: -3.409608e-11, z: 1.8137467e-12, w: 1}
-  m_LocalPosition: {x: 0, y: 0.00239, z: 0.0001}
+  m_LocalPosition: {x: 6.750156e-16, y: 0.007209719, z: 6.0387434e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4237653278003510711}
@@ -1032,8 +1033,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4581810222203295668}
   m_LocalRotation: {x: 0.7070233, y: -0.010859282, z: 0.70702356, w: 0.0108519215}
-  m_LocalPosition: {x: 0.0055, y: 0.0017, z: 0}
-  m_LocalScale: {x: 1.5751507, y: 5.1396813, z: 0.80403876}
+  m_LocalPosition: {x: 0.0017, y: 0.0017, z: -0}
+  m_LocalScale: {x: 2.840783, y: 2.0659904, z: 1.450083}
   m_Children:
   - {fileID: 4237653278003510711}
   m_Father: {fileID: 326411102681151781}
@@ -1093,14 +1094,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4971808933281597953}
-  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0.0001, y: 0.00323, z: -0.0003}
+  m_LocalRotation: {x: 1.0178459e-15, y: -0.000000020394413, z: 7.6259814e-12, w: 1}
+  m_LocalPosition: {x: -2.3092638e-16, y: 0.007209719, z: 6.0051725e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 716119568796125183}
   m_Father: {fileID: 4093287129725496791}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5461256946518614280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,7 +1738,7 @@ Transform:
   m_GameObject: {fileID: 8986104188337794304}
   m_LocalRotation: {x: -0.0000006575482, y: 0.0000034390941, z: 0.16187634, w: 0.9868111}
   m_LocalPosition: {x: 0, y: 0.0053, z: 0.0008}
-  m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
+  m_LocalScale: {x: 1.4229956, y: 1.4229956, z: 1.4229956}
   m_Children: []
   m_Father: {fileID: 326411102681151781}
   m_RootOrder: 5
