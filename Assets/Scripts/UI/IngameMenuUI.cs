@@ -7,6 +7,10 @@ using UnityEngine;
 
 public class IngameMenuUI : MonoBehaviour
 {
+    [SerializeField] GameObject album;
+
+    [SerializeField] DetailUI detail;
+
     [SerializeField] Transform speciesPanel;
 
     [SerializeField] GameObject speciePrefab;
@@ -26,6 +30,9 @@ public class IngameMenuUI : MonoBehaviour
     }
     
     private void OnEnable() {
+        album.SetActive(true);
+        detail.gameObject.SetActive(false);
+
         RenderPhotos(Animal.Order.Araneae);
         scoreText.text = GameplayManager.instance.pictures + "/" + GameplayManager.instance.total;
     }
@@ -61,10 +68,11 @@ public class IngameMenuUI : MonoBehaviour
             if(File.Exists(imagePath)){
                 
                 Sprite actualPhoto = LoadNewSprite(imagePath);
-                btnScript.SetUp(actualPhoto, animal.cientificName);
+                btnScript.SetUp(this, actualPhoto, animal.cientificName, true);
             }else{
-                btnScript.SetUp(animal.image, animal.cientificName);
+                btnScript.SetUp(this, animal.image, animal.cientificName, false);
             }
+            btnScript.animal = animal;
         }
     }
 
@@ -88,4 +96,16 @@ public class IngameMenuUI : MonoBehaviour
         resultText.text = pPictures >= pTotal ? "Ganaste!" : "Perdiste :(";
     }
 
+    public void ActiveDetail(Animal pAnimal, Sprite pSprite, bool pTaken)
+    {
+        album.SetActive(false);
+        detail.gameObject.SetActive(true);
+        detail.ShowDetail(pAnimal, pSprite, pTaken);
+    }
+
+    public void ActiveAlbum()
+    {
+        album.SetActive(true);
+        detail.gameObject.SetActive(false);
+    }
 }

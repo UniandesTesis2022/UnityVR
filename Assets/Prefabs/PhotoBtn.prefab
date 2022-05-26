@@ -60,6 +60,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   photo: {fileID: 7437700995036114679}
+  animal:
+    cientificName: 
+    description: 
+    animalOrder: 0
+    image: {fileID: 0}
   animalName: {fileID: 4928135053742477565}
 --- !u!1 &3336555453305401950
 GameObject:
@@ -314,4 +319,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7437700995036114679}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9076798282166069678}
+        m_TargetAssemblyTypeName: PhotoBtn, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

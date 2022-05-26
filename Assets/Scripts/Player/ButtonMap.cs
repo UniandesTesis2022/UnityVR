@@ -56,13 +56,17 @@ public class ButtonMap : MonoBehaviour
         
         if (menuInteraction && OVRInput.GetDown(OVRInput.Button.Start))
         {
-            Debug.Log("Start");
-            activeMenu = !activeMenu;
-            menuUI.SetActive(activeMenu);
-            tablet.gameObject.SetActive(!tablet.gameObject.activeSelf);
-
-            Time.timeScale = activeMenu ? 0 : 1;
+            ToggleMenu();
         }
+    }
+
+    public void ToggleMenu()
+    {
+        activeMenu = !activeMenu;
+        menuUI.SetActive(activeMenu);
+        tablet.gameObject.SetActive(!tablet.gameObject.activeSelf);
+
+        Time.timeScale = activeMenu ? 0 : 1;
     }
 
     public void AllowInput()
