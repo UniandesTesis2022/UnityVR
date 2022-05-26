@@ -19,7 +19,7 @@ public class GameplayManager : MonoBehaviour
     public int pictures;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if(instance == null)
         {

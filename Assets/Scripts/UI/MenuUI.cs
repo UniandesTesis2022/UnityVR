@@ -13,7 +13,8 @@ public class MenuUI : MonoBehaviour
     [SerializeField] private ButtonMap buttonMap;
 
     [SerializeField] GameObject player;
-    [SerializeField] Vector3 offset;
+    [SerializeField] float menuDistance;
+    [SerializeField] float menuHeight;
 
     // Start is called before the first frame update
     void Start()
@@ -28,15 +29,10 @@ public class MenuUI : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        transform.position = player.transform.position + offset;
-    }
-
     public void StartGame(float pSeconds)
     {
         initialMenu.gameObject.SetActive(false);
-        SceneManager.LoadScene("SecondScenario");
+        SceneManager.LoadScene("MainScenario");
     }
 
     public void ShowIngame()

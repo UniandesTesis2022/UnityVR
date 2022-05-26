@@ -37,20 +37,6 @@ public class ScreenshotHandler {
         return image;
     }
 
-    IEnumerator Screenshot(Camera camera, string folder, string name, CameraUI cameraUI, Animal pAnimal)
-    {
-        yield return new WaitForEndOfFrame();
-        RenderTexture renderTexture = camera.targetTexture;
-
-        Texture2D renderResult = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.ARGB32, false);
-        Rect rect = new Rect(0,0, renderTexture.width, renderTexture.height);
-        renderResult.ReadPixels(rect, 0, 0);
-
-        // Do whatever with screenshot
-        FileManager.WriteToFile(Path.Combine(savePath, folder), name.Replace(" ", ""), renderResult);
-        cameraUI.ShowPhoto(renderResult, pAnimal.image);
-    }
-
     public static bool PhotoExists(string folder, string name)
     {
         return FileManager.FileExists(Path.Combine(savePath, folder), name.Replace(" ",""));

@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 7822524586920661972}
   - component: {fileID: 7822524586920661973}
   - component: {fileID: 84292259681604370}
-  - component: {fileID: 7767516043982187005}
+  - component: {fileID: 7271896058919741536}
   m_Layer: 0
   m_Name: Phiale gratiosa
   m_TagString: Animal
@@ -1071,9 +1071,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6130948637078092890}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.74, y: -0.031, z: 0.7698}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 4898302229797139342}
   - {fileID: 5067667287760523734}
@@ -1145,7 +1145,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7767516043982187005
+--- !u!114 &7271896058919741536
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1154,16 +1154,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6130948637078092890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb077cafb0fa02e468e3899c5bb643c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ed7f496bec5b8546a5ab7c935caae88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectivePlaces:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  speed: 1
-  offset: 0.05
-  idleTime: 5
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 0.5
+  offset: 0.03
+  idleTime: 1
 --- !u!1 &6176023402017789462
 GameObject:
   m_ObjectHideFlags: 0

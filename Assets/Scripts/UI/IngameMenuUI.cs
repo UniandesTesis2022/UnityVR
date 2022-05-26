@@ -63,7 +63,7 @@ public class IngameMenuUI : MonoBehaviour
                 Sprite actualPhoto = LoadNewSprite(imagePath);
                 btnScript.SetUp(actualPhoto, animal.cientificName);
             }else{
-                btnScript.SetUp(animal.cientificName);
+                btnScript.SetUp(animal.image, animal.cientificName);
             }
         }
     }

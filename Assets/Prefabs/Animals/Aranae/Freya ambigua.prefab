@@ -748,6 +748,8 @@ GameObject:
   - component: {fileID: 2543118587387219415}
   - component: {fileID: 1590088254046330645}
   - component: {fileID: 1590088254046330644}
+  - component: {fileID: 992394908887784087}
+  - component: {fileID: 6152681280538462533}
   m_Layer: 0
   m_Name: Freya ambigua
   m_TagString: Animal
@@ -762,9 +764,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3425991578314731675}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.49, y: 0.858, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_Children:
   - {fileID: 4135522243496542031}
   - {fileID: 4381414135813692695}
@@ -820,6 +822,41 @@ MonoBehaviour:
     description: 
     animalOrder: 0
     image: {fileID: 21300000, guid: da41aea947bed3a40a8e5999ecbb43ac, type: 3}
+--- !u!54 &992394908887784087
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3425991578314731675}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6152681280538462533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3425991578314731675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ed7f496bec5b8546a5ab7c935caae88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectivePlaces:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 1
+  offset: 0.03
+  idleTime: 5
 --- !u!1 &4036831842125733006
 GameObject:
   m_ObjectHideFlags: 0

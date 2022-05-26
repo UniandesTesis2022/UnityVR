@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpiderBehaviour : MonoBehaviour
 {
-    private const string animatorWalking = "isMoving";
+    private const string animatorMoving = "isMoving";
 
     [SerializeField] private Transform[] objectivePlaces;
     [SerializeField] private float speed;
@@ -30,17 +30,17 @@ public class SpiderBehaviour : MonoBehaviour
 
         currentTime = 0;
         _animator = GetComponent<Animator>();
-        _animator.SetBool(animatorWalking, true);
+        _animator.SetBool(animatorMoving, true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_animator.GetBool(animatorWalking))
+        if (_animator.GetBool(animatorMoving))
         {
             if( (objectivePosition - transform.position).magnitude < offset)
             {
-                _animator.SetBool(animatorWalking, false);
+                _animator.SetBool(animatorMoving, false);
                 _animator.speed = 0.25f;
                 LockNewPosition();
             }
@@ -51,7 +51,8 @@ public class SpiderBehaviour : MonoBehaviour
             if (currentTime >= idleTime)
             {
                 currentTime = 0f;
-                _animator.SetBool(animatorWalking, true);
+                transform.LookAt(objectivePosition, transform.up);
+                _animator.SetBool(animatorMoving, true);
                 _animator.speed = speed;
                 _rigidbody.velocity = (objectivePosition - transform.position).normalized * speed;
             }
@@ -62,8 +63,6 @@ public class SpiderBehaviour : MonoBehaviour
     {
         objectiveIndex = (objectiveIndex + 1) % objectivePlaces.Length;
         objectivePosition = objectivePlaces[objectiveIndex].position;
-
-        transform.LookAt(objectivePosition, transform.up);
         _rigidbody.velocity = Vector3.zero;
     }
 }
