@@ -35,7 +35,7 @@ public class IngameMenuUI : MonoBehaviour
         GameObject newObject;
 
         foreach (Animal.Order specie in 
-            new Animal.Order[]{Animal.Order.Araneae, Animal.Order.Coleoptera})
+            new Animal.Order[]{Animal.Order.Araneae, Animal.Order.Coleoptera, Animal.Order.Lepidoptera, Animal.Order.Odonata})
         {
             newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
             btnScript = newObject.GetComponent<SpeciesBtn>();

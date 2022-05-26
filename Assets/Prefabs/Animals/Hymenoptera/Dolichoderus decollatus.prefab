@@ -582,7 +582,7 @@ GameObject:
   - component: {fileID: 3553018165739722369}
   m_Layer: 6
   m_Name: Dolichoderus decollatus
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

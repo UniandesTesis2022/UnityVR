@@ -982,7 +982,7 @@ GameObject:
   - component: {fileID: 5495921699518872303}
   m_Layer: 6
   m_Name: Protesilaus protesilaus
-  m_TagString: Untagged
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -996,7 +996,7 @@ Transform:
   m_GameObject: {fileID: 5766063471794787209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.952}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
   m_Children:
   - {fileID: 709240494320716660}
   - {fileID: 5208751435928800199}

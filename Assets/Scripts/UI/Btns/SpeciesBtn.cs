@@ -15,7 +15,7 @@ public class SpeciesBtn : MonoBehaviour
         specie = pSpecie;
         menu = pMenu;
 
-        text.text = pSpecie.ToString();
+        text.text = Animal.GetOrderCommonName(pSpecie);
     }
 
     public void OnClick(){

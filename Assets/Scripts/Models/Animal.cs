@@ -7,7 +7,7 @@ public class Animal : IComparable
 {
     public enum Order
     {
-        Araneae, Coleoptera, Hymenoptera1, Hymenoptera2, Odonata, Lepidoptera, Diptera, Others
+        Araneae, Coleoptera, Hymenoptera1, Hymenoptera2, Odonata, Lepidoptera, Diptera, Others, Hymenoptera
     }
 
     public string cientificName;
