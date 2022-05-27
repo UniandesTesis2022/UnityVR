@@ -41,7 +41,13 @@ public class PointBehaviour : MonoBehaviour
     {
         if (_animator.GetBool(animatorMoving))
         {
-            if( (objectivePosition - transform.position).magnitude < offset)
+            if( (objectivePosition - transform.position).magnitude < offset )
+            {
+                _animator.SetBool(animatorMoving, false);
+                _animator.speed = idleSpeed;
+                LockNewPosition();
+            }
+            else if((objectivePosition - transform.position).magnitude > 0.5f)
             {
                 _animator.SetBool(animatorMoving, false);
                 _animator.speed = idleSpeed;

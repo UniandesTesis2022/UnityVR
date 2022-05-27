@@ -60,6 +60,12 @@ public class PointStopBehaviour : MonoBehaviour
                     LockNewPosition();
                 }
             }
+            else if ((objectivePosition - transform.position).magnitude > 0.5f)
+            {
+                _animator.SetBool(animatorMoving, false);
+                _animator.speed = idleSpeed;
+                LockNewPosition();
+            }
         }
         else
         {
