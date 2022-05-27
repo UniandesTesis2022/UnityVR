@@ -1355,6 +1355,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1937698216, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_text
+      value: FotodiversidadVR
+      objectReference: {fileID: 0}
     - target: {fileID: 2055964160, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_text
       value: "Este videojuego, patrocinado por el Museo de Historia Natural de la
