@@ -828,7 +828,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Morpho peleides
-    description: 
+    description: "Morfo azul andina, sus alas tienen un color azul brillante, causado
+      por la difracci\xF3n de la luz de millones de diminutas escamas de sus alas.
+      El parpadeo de sus alas ahuyenta depredadores"
     animalOrder: 5
     image: {fileID: 21300000, guid: 732a62ea395af6d4f8b0853e8618795c, type: 3}
 --- !u!1 &4911191609517978978

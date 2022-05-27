@@ -510,7 +510,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Onthophagus marginicollis
-    description: 
+    description: "Son nocturnos y construyen nidos cavando verticalmente bajo los
+      excrementos de mam\xEDfero con el fin de depositar porciones para depositarles
+      huevos y alimentarse.  Esta especie se ve favorecida por la deforestaci\xF3n
+      y la creaci\xF3n de \xE1reas abiertas como potreros para la cr\xEDa de ganado"
     animalOrder: 1
     image: {fileID: 21300000, guid: 902f052b2b92cc54d807350e7396e37f, type: 3}
 --- !u!1 &2018409386198303131

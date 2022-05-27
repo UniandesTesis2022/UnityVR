@@ -379,8 +379,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Fylgia amazonica
-    description: 
-    animalOrder: 4
+    description: "Es la \xFAnica especie del g\xE9nero Fylgia. Vive en Latinoam\xE9rica,
+      es una especie propia de bosques profundos que cr\xEDa en charcas estancadas."
+    animalOrder: 9
     image: {fileID: 21300000, guid: e24b81c54aa5ddd4ea134fa5e2952526, type: 3}
 --- !u!54 &1216558793
 Rigidbody:

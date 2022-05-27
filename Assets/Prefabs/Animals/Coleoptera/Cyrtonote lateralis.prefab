@@ -1007,7 +1007,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Cyrtonote lateralis
-    description: 
+    description: "Unas cinco docenas de especies componen el g\xE9nero Cyrtonota,
+      muchas de las cuales se encuentran en las tierras altas de Sudam\xE9rica. Muchas
+      especies tienen colores met\xE1licos y/o reticulaci\xF3n elytral"
     animalOrder: 1
     image: {fileID: 21300000, guid: 15a17b5b113b3f84c9159c701f7f28ff, type: 3}
 --- !u!1 &4922771256366681261

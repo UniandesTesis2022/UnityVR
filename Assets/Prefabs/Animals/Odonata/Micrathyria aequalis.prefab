@@ -823,9 +823,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    cientificName: Mecistogaster linearis
-    description: 
-    animalOrder: 4
+    cientificName: Micrathyria aequalis
+    description: "Conocida como Cenicilla de Cola Manchada, especie rayada de libelula.
+      Se encuentra en el Mar Caribe, Am\xE9rica Central, Am\xE9rica del Norte y Am\xE9rica
+      del Sur."
+    animalOrder: 9
     image: {fileID: 21300000, guid: 9d20a4dd53c079644a232c955e1c8afc, type: 3}
 --- !u!54 &45436920
 Rigidbody:

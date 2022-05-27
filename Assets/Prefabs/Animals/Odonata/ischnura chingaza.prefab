@@ -755,7 +755,7 @@ GameObject:
   - component: {fileID: 31210415}
   - component: {fileID: 31210414}
   m_Layer: 6
-  m_Name: ischnura chingaza
+  m_Name: Ischnura chingaza
   m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,8 +824,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Ischnura chingaza
-    description: 
-    animalOrder: 4
+    description: "La especie se encuentra en y cerca de los biomas de pastizal y
+      p\xE1ramo del Parque Nacional Natural Chingaza, Cundinamarca. Se reproducen
+      en lagunas de agua dulce."
+    animalOrder: 10
     image: {fileID: 21300000, guid: c8c7e248abbe093469ad03b07a54992c, type: 3}
 --- !u!54 &31210415
 Rigidbody:

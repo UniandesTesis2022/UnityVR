@@ -823,9 +823,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    cientificName: Mecistogaster linearis
-    description: 
-    animalOrder: 4
+    cientificName: Erythrodiplax unimaculata
+    description: "Conocido como dragonlet de cola blanca, se encuentra en multiples
+      regiones de Sur Am\xE9rica"
+    animalOrder: 9
     image: {fileID: 21300000, guid: f75f1407d6a1d0244a2992968eda596e, type: 3}
 --- !u!54 &1858624607
 Rigidbody:

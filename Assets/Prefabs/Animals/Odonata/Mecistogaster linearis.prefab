@@ -824,8 +824,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Mecistogaster linearis
-    description: 
-    animalOrder: 4
+    description: "Zig\xF3ptero de alas estrechilargas, se encuentra en Sur Am\xE9rica,
+      depositan sus huevos en las rosetas llenas de agua de las bromelias"
+    animalOrder: 10
     image: {fileID: 21300000, guid: 6a44b0dd27b107949bd623ec1788af8e, type: 3}
 --- !u!54 &169811187
 Rigidbody:

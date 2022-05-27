@@ -1646,7 +1646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Pamphobeteus
-    description: 
+    description: "Es un g\xE9nero de ara\xF1as migalomorfas de la familia Theraphosidae
+      (Tar\xE1ntulas) . Son originarias de Panam\xE1 y norte de Sudam\xE9rica."
     animalOrder: 0
     image: {fileID: 21300000, guid: ddfdbc179bb4cd042a699e6ccefda4f3, type: 3}
 --- !u!1 &7564111640089870072

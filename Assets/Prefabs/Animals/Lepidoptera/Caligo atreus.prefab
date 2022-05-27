@@ -342,7 +342,7 @@ Transform:
   m_GameObject: {fileID: 1005925098323270328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.014}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 6063909816673583685}
   - {fileID: 1565524736619692790}
@@ -395,7 +395,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Caligo atreus
-    description: 
+    description: "El b\xFAho gigante de bordes amarillos, destacan por su gran tama\xF1o
+      y larga esperanza de vida (3-4 meses)"
     animalOrder: 5
     image: {fileID: 21300000, guid: 670885101b5a28745883e57499578469, type: 3}
 --- !u!1 &1075191495127969021

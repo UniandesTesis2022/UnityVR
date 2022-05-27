@@ -479,7 +479,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Platycoelia valida
-    description: 
+    description: "Perteneciente al g\xE9nero playcoelia, caracterizados por peque\xF1o
+      tama\xF1o y la forma del caparaz\xF3n. Se puede encontrar en bosques y zonas
+      verdes"
     animalOrder: 1
     image: {fileID: 21300000, guid: d1cf32ca7805a7549a3c928773187dda, type: 3}
 --- !u!1 &1915926202292938398

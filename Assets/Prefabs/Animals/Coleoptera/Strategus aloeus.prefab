@@ -817,7 +817,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Strategus aloeus
-    description: 
+    description: "Es un insecto de gran importancia econ\xF3mica en cultivos de palma
+      de aceite menores de 5 a\xF1os. Tambi\xE9n es conocido como el escarabajo rinoceronte,
+      que pueden da\xF1ar el meristemo y provocar la muerte de las palmas."
     animalOrder: 1
     image: {fileID: 21300000, guid: cfd725897404634469bc1f49ae61ec6c, type: 3}
 --- !u!1 &3845881513462161028

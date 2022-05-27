@@ -80,20 +80,30 @@ public class GameplayManager : MonoBehaviour
         {
             switch (pSpecie)
             {
+                case Animal.Order.Odonata:
+                    List<Animal> otherList1 = new List<Animal>();
+                    foreach (var otherSpecie in new Animal.Order[] { Animal.Order.Odonata1, Animal.Order.Odonata2 })
+                    {
+                        if (instance.allAnimals.TryGetValue(otherSpecie, out List<Animal> returnList1))
+                        {
+                            otherList1.AddRange(returnList1);
+                        }
+                    }
+                    return otherList1;
                 case Animal.Order.Others:
                     List<Animal> otherList2 = new List<Animal>();
                     foreach (var otherSpecie in new Animal.Order[] { Animal.Order.Hymenoptera1, Animal.Order.Hymenoptera2, Animal.Order.Diptera })
                     {
-                        if (instance.allAnimals.TryGetValue(otherSpecie, out List<Animal> returnList1))
+                        if (instance.allAnimals.TryGetValue(otherSpecie, out List<Animal> returnList2))
                         {
-                            otherList2.AddRange(returnList1);
+                            otherList2.AddRange(returnList2);
                         }
                     }
                     return otherList2;
                 default:
-                    if (instance.allAnimals.TryGetValue(pSpecie, out List<Animal> returnList2))
+                    if (instance.allAnimals.TryGetValue(pSpecie, out List<Animal> returnList3))
                     {
-                        return returnList2;
+                        return returnList3;
                     }
                     break;
             }

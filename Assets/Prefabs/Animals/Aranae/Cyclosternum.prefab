@@ -881,7 +881,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Cyclosternum
-    description: 
+    description: "Habita en los bosques y selvas tropicales. Es una especie que a
+      pesar de no ser agresiva si es muy nerviosa, reacciona con movimientos muy
+      r\xE1pidos"
     animalOrder: 0
     image: {fileID: 21300000, guid: ad1721d03b8299447b5fcba0fdf7a87e, type: 3}
 --- !u!54 &5661194682314735701

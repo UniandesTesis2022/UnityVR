@@ -823,9 +823,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animal:
-    cientificName: Mecistogaster linearis
-    description: 
-    animalOrder: 4
+    cientificName: Microstigma rotundatum
+    description: "Viven en bosques primarios tropicales de tierras bajas. Se alimentan
+      principalmente de ara\xF1as tejedoras"
+    animalOrder: 10
     image: {fileID: 21300000, guid: 4e41e820e6ecf054c9c273d0dd08078d, type: 3}
 --- !u!54 &1906328697
 Rigidbody:

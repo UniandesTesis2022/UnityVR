@@ -1559,7 +1559,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Macrodontia cervicornis
-    description: 
+    description: "Es el miembro m\xE1s grande del g\xE9nero Macrodontia. Esta especie
+      es a veces considerada la segunda m\xE1s grande de todos los escarabajos, alcanzando
+      m\xE1s de 17 cm de longitud gracias a sus grandes mandibulas."
     animalOrder: 1
     image: {fileID: 21300000, guid: 0f558733855527540b88a7fb2b4f98c3, type: 3}
 --- !u!1 &8089272080762026391

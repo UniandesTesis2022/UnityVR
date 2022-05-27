@@ -1009,8 +1009,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Hetaerina amazonica
-    description: 
-    animalOrder: 4
+    description: "Zig\xF3ptero de la familia Hetaerina, com\xFAnmente conocido como
+      Rubyspots, se encuentra en latinoamerica en zonas tropicales"
+    animalOrder: 10
     image: {fileID: 21300000, guid: c60ae77cf5f16ba4fa7eb42b7584a48d, type: 3}
 --- !u!54 &1901661858
 Rigidbody:

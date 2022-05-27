@@ -304,7 +304,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Eudocima apta
-    description: 
+    description: "Polilla nocturna de mediano tama\xF1o, perforadora de frutos como
+      la mandarina y la naranja"
     animalOrder: 5
     image: {fileID: 21300000, guid: cafe21acb633d02499b1d519cfeca8a2, type: 3}
 --- !u!1 &460555545289146757

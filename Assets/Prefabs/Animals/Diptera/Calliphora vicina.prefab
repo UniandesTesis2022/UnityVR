@@ -761,7 +761,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Calliphora vicina
-    description: 
+    description: "Moscardas azules, ayudan a descomponer los cuerpos de animales
+      muertos y tienen un papel secundario en la polinizaci\xF3n"
     animalOrder: 6
     image: {fileID: 21300000, guid: 132be2dbe07a546468a202a1ae9d9396, type: 3}
 --- !u!1 &4121594676021468979

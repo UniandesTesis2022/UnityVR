@@ -1798,7 +1798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: 'Procryptocerus pictipes '
-    description: 
+    description: "Habitan zonas forestales h\xFAmedas, normalmente como trabajadores
+      de la vegetaci\xF3n baja, del dosel o de las ca\xEDdas recientes de \xE1rboles"
     animalOrder: 3
     image: {fileID: 21300000, guid: 973a9e285480ee34e97b1354ce363e48, type: 3}
 --- !u!1 &9162478267837489415

@@ -649,7 +649,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Dolichoderus decollatus
-    description: 
+    description: "Especie com\xFAn en latinoam\xE9rica, sus colonias son de tama\xF1o
+      variable y se construyen en el suelo, en las hojas rizadas, en los tallos huecos
+      de las plantas y en cartones"
     animalOrder: 3
     image: {fileID: 21300000, guid: bb6086fa1fac473418bcfb08c596a3b2, type: 3}
 --- !u!1 &3132324887147958136

@@ -1428,7 +1428,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Rothschildia orizaba
-    description: 
+    description: "Conocida como Polilla Cuatro Espejos, considerados mariposas nocturnas
+      de tama\xF1o grande. Los adultos no pueden alimentarse y su \xFAnico objetivo
+      es la reproducci\xF3n."
     animalOrder: 5
     image: {fileID: 21300000, guid: d5163e7e07f581f4c87c9c98a370e368, type: 3}
 --- !u!1 &8174004806508339349

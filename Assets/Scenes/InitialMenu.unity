@@ -1354,6 +1354,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2055964160, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_text
+      value: "Este videojuego, patrocinado por el Museo de Historia Natural de la
+        Universidad de los Andes, busca ense\xF1ar sobre las especies de invertebrados
+        presentes en el entorno Colombiano y en el museo.\n\nEl objetivo es simple,
+        !Tomale una foto a todos los especimenes\xA1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2385477966173649152, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4215280621275619682, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1398,36 +1409,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4891634036908193200, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5604898863674830449, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7455784744451066450, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7725732388969672466, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7725732388969672466, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7725732388969672466, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7725732388969672466, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7725732388969672466, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7725732388969672466, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

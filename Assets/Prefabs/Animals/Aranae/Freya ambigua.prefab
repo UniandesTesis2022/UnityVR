@@ -819,7 +819,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animal:
     cientificName: Freya ambigua
-    description: 
+    description: "Ara\xF1a saltadora de tama\xF1o medio que fue descrita originalmente
+      en Surinam. Se encuentra en campos densos y soleados de hierba o plantas herb\xE1ceas."
     animalOrder: 0
     image: {fileID: 21300000, guid: da41aea947bed3a40a8e5999ecbb43ac, type: 3}
 --- !u!54 &992394908887784087
