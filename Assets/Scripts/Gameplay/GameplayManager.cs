@@ -14,6 +14,7 @@ public class GameplayManager : MonoBehaviour
     public bool isPlaying;
 
     public MenuUI menuUI;
+    public GameObject closeBtn;
 
     public int total;
     public int pictures;
@@ -123,6 +124,7 @@ public class GameplayManager : MonoBehaviour
 
     public void FinishGame()
     {
+        closeBtn.SetActive(false);
         menuUI.gameObject.SetActive(true);
         menuUI.FinishGame(pictures, total);
     }
