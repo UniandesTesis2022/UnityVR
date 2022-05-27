@@ -73,5 +73,7 @@ public class PointBehaviour : MonoBehaviour
         objectiveIndex = (objectiveIndex + 1) % objectivePlaces.Length;
         objectivePosition = objectivePlaces[objectiveIndex].position;
         _rigidbody.velocity = Vector3.zero;
+
+        transform.rotation = new Quaternion(0, transform.rotation.y, 0, transform.rotation.w);
     }
 }
