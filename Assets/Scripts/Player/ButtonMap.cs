@@ -5,6 +5,10 @@ using UnityEngine;
 public class ButtonMap : MonoBehaviour
 {
     [SerializeField] GameObject menuUI;
+    [SerializeField] GameObject player;
+    [SerializeField] float menuDistance;
+    [SerializeField] float menuHeight;
+
     [SerializeField] TabletManager tablet;
 
     private bool activeMenu;
@@ -67,6 +71,26 @@ public class ButtonMap : MonoBehaviour
         tablet.gameObject.SetActive(!tablet.gameObject.activeSelf);
 
         Time.timeScale = activeMenu ? 0 : 1;
+        if (activeMenu)
+        {
+            Vector3 newPosition = player.transform.forward * menuDistance;
+            if(newPosition.y < menuHeight)
+            {
+                newPosition.y = menuHeight;
+            }
+            menuUI.transform.localPosition = newPosition;
+
+            Quaternion newRotation = Quaternion.LookRotation(player.transform.forward, transform.up);
+            if(newRotation.x > 0)
+            {
+                newRotation.x = 0;
+            }
+            else if(newRotation.x < -45)
+            {
+                newRotation.x = -45;
+            }
+            menuUI.transform.localRotation = newRotation;
+        }
     }
 
     public void AllowInput()

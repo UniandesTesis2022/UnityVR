@@ -1355,6 +1355,97 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 679075803, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075803, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075803, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075803, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075803, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.59100014
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075803, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075804, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Size.x
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075804, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 679075804, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6047062998020310423, guid: 6bb21e88005f1844c8858840561598a8, type: 3}
+    - target: {fileID: 679075804, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789878, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Name
+      value: Morado
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789879, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789879, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789879, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789879, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789879, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.591
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789879, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789880, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Size.x
+      value: 11.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789880, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Size.y
+      value: 11.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 797789880, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6977937172876042345, guid: 2ab8d288fe2d61e458e231a826d59125, type: 3}
+    - target: {fileID: 797789880, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1751937487, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_text
+      value: "Utiliza el gatillo de tu control derecho para tomar fotos. Puedes oprimir
+        el bot\xF3n start del control izquierdo para pausar el juego en cualquier
+        momento.\n\nSi ya le tomaste foto al espec\xEDmen este saldr\xE1 de color
+        verde, sino saldr\xE1 de color morado."
+      objectReference: {fileID: 0}
     - target: {fileID: 1937698216, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_text
       value: FotodiversidadVR
@@ -1369,6 +1460,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2385477966173649152, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978688228816459353, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4215280621275619682, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
@@ -1426,6 +1521,22 @@ PrefabInstance:
     - target: {fileID: 6404842016207083125, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129992662484275349, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.500672
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129992662484275349, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.500672
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129992662484275349, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.500672
+      objectReference: {fileID: 0}
+    - target: {fileID: 7129992662484275349, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 7455784744451066450, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_IsActive

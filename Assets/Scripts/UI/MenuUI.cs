@@ -12,10 +12,6 @@ public class MenuUI : MonoBehaviour
 
     [SerializeField] private ButtonMap buttonMap;
 
-    [SerializeField] GameObject player;
-    [SerializeField] float menuDistance;
-    [SerializeField] float menuHeight;
-
     // Start is called before the first frame update
     void Start()
     {

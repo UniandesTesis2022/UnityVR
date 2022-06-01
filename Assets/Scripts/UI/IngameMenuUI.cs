@@ -44,11 +44,11 @@ public class IngameMenuUI : MonoBehaviour
         foreach (Animal.Order specie in 
             new Animal.Order[]{Animal.Order.Araneae, Animal.Order.Coleoptera, Animal.Order.Lepidoptera, Animal.Order.Odonata})
         {
-            newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
+            newObject = Instantiate(speciePrefab, speciesPanel.position, speciesPanel.rotation, speciesPanel);
             btnScript = newObject.GetComponent<SpeciesBtn>();
             btnScript.SetUp(this, specie);
         }
-        newObject = Instantiate(speciePrefab, speciesPanel.position, Quaternion.identity, speciesPanel);
+        newObject = Instantiate(speciePrefab, speciesPanel.position, speciesPanel.rotation, speciesPanel);
         btnScript = newObject.GetComponent<SpeciesBtn>();
         btnScript.SetUp(this, Animal.Order.Others);
     }
@@ -60,7 +60,7 @@ public class IngameMenuUI : MonoBehaviour
         string imagePath;
         foreach (Animal animal in animals)
         {
-            GameObject newObject = Instantiate(photoPrefab, photoPanel.position, Quaternion.identity, photoPanel);
+            GameObject newObject = Instantiate(photoPrefab, photoPanel.position, photoPanel.rotation, photoPanel);
             
             imagePath = Path.Combine(Application.persistentDataPath, "Photos", animal.animalOrder.ToString(), animal.cientificName.Replace(" ", "") + ".jpg");
 
