@@ -1362,9 +1362,10 @@ PrefabInstance:
     - target: {fileID: 2055964160, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_text
       value: "Este videojuego, patrocinado por el Museo de Historia Natural de la
-        Universidad de los Andes, busca ense\xF1ar sobre las especies de invertebrados
-        presentes en el entorno Colombiano y en el museo.\n\nEl objetivo es simple,
-        !Tomale una foto a todos los especimenes\xA1"
+        Universidad de los Andes y desarrollado por los estudiantes Nicol\xE1s Abondano,
+        Jaime Carvajal y Nicol\xE1s Melendez, busca ense\xF1ar sobre las especies
+        de invertebrados presentes en el entorno Colombiano y en el museo.\n\nEl
+        objetivo es simple, !Tomale una foto a todos los especimenes\xA1"
       objectReference: {fileID: 0}
     - target: {fileID: 2385477966173649152, guid: cf04268e95b2e1545bad7c512d43c8ee, type: 3}
       propertyPath: m_IsActive

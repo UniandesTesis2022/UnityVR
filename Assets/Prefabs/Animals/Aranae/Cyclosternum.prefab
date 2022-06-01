@@ -808,9 +808,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4031943933447459416}
   - component: {fileID: 3494492974175778222}
+  - component: {fileID: 5661194682314735701}
   - component: {fileID: 370762941680789356}
   - component: {fileID: 370762941680789357}
-  - component: {fileID: 5661194682314735701}
   - component: {fileID: 7305537040507937171}
   m_Layer: 6
   m_Name: Cyclosternum
@@ -854,6 +854,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &5661194682314735701
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4377365838401702114}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!135 &370762941680789356
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -886,22 +902,6 @@ MonoBehaviour:
       r\xE1pidos"
     animalOrder: 0
     image: {fileID: 21300000, guid: ad1721d03b8299447b5fcba0fdf7a87e, type: 3}
---- !u!54 &5661194682314735701
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4377365838401702114}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
 --- !u!114 &7305537040507937171
 MonoBehaviour:
   m_ObjectHideFlags: 0

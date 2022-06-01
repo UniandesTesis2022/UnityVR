@@ -18,7 +18,7 @@ public class TabletManager : MonoBehaviour
     {
         mainCamera = Camera.main.transform;
 
-        photoCamera.fieldOfView = maxFOV;
+        photoCamera.fieldOfView = 23;
         fieldOfViewText.text = photoCamera.fieldOfView.ToString();
     }
 

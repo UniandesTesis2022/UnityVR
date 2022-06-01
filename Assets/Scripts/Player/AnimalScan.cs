@@ -4,6 +4,8 @@ public class AnimalScan : MonoBehaviour
 {
     // Camera 
     [SerializeField] Camera cameraPhoto;
+    [SerializeField] Transform cameraScan;
+
     [SerializeField] CameraUI cameraUI;
 
     public PlayerSounds playerSounds;
@@ -16,7 +18,7 @@ public class AnimalScan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Physics.Raycast(cameraPhoto.transform.position, cameraPhoto.transform.forward, out hit, CameraRange))
+        if (Physics.Raycast(cameraScan.transform.position, cameraScan.transform.forward, out hit, CameraRange))
         {
             if (hit.transform.CompareTag("Animal"))
             {

@@ -324,8 +324,10 @@ GameObject:
   m_Component:
   - component: {fileID: 485846840219336706}
   - component: {fileID: 86881612994017212}
+  - component: {fileID: 1146043396}
   - component: {fileID: 4444115266232808347}
   - component: {fileID: 1276066856942482398}
+  - component: {fileID: 1146043395}
   m_Layer: 6
   m_Name: Caligo atreus
   m_TagString: Animal
@@ -342,7 +344,7 @@ Transform:
   m_GameObject: {fileID: 1005925098323270328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1.014}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 0.023409609, y: 0.023409609, z: 0.023409609}
   m_Children:
   - {fileID: 6063909816673583685}
   - {fileID: 1565524736619692790}
@@ -368,6 +370,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &1146043396
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005925098323270328}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!135 &4444115266232808347
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -399,6 +417,34 @@ MonoBehaviour:
       y larga esperanza de vida (3-4 meses)"
     animalOrder: 5
     image: {fileID: 21300000, guid: 670885101b5a28745883e57499578469, type: 3}
+--- !u!114 &1146043395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005925098323270328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1ac9f2f62b3c14cbe975644b94d3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectivePlaces:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  objectiveStop: 7
+  stopTime: 3
+  speed: 0.5
+  offset: 0.02
+  idleTime: 0.1
+  idleSpeed: 4
+  movingSpeed: 4
 --- !u!1 &1075191495127969021
 GameObject:
   m_ObjectHideFlags: 0

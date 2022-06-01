@@ -842,7 +842,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1858624606
 MonoBehaviour:
@@ -861,11 +861,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  speed: 1
-  offset: 1
+  speed: 2
+  offset: 0.03
   idleTime: 2
-  idleSpeed: 4
-  movingSpeed: 4
+  idleSpeed: 24
+  movingSpeed: 24
 --- !u!1 &3505755583847484894
 GameObject:
   m_ObjectHideFlags: 0
